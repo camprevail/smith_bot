@@ -33,7 +33,7 @@ client.on("message", async message => {
         imagelog = fs.readFileSync(env.daily_log).toString('utf-8')
         image_array = imagelog.replace(/\r\n|\n/g, ',').split(",").filter(Boolean)
         image = image_array.shift()
-        await message.reply({
+        await message.reply("Here's today's jubeat news again.", {
                     files: [image_folder+image+".png"]
                     }).catch(error => console.log(`Couldn't post because of: ${error}`))
     }
@@ -51,7 +51,7 @@ client.on("message", async message => {
             emoji_id = cmdparse[1]
             url = `https://cdn.discordapp.com/emojis/${emoji_id}.png`
         } else {
-            return message.reply("Sorry, you can't use regular emojis.")
+            return message.reply("Sorry, you can't use that emoji.")
 
         }
         console.log(`posting emoji ${emoji_id}`)
