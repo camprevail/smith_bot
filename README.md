@@ -1,4 +1,4 @@
-#A discord bot for the foodbeat players
+# A discord bot for the foodbeat players
 
 Written, hosted and maintained by Cammy.
 
