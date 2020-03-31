@@ -7,7 +7,7 @@ require('./consoleTimestamp')()
 const {resolve} = require('path')
 path = require('path')
 env = require('dotenv').config({path: resolve(__dirname,`./config/${environment}.env`)}).parsed
-
+console.log(env.logfile)
 
 const config = require("./config/botconfig.json")
 image_folder = resolve(__dirname,'./assets/') + path.sep

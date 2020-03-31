@@ -19,7 +19,7 @@ var image = 0
 
 client.on("ready", async message => {
 	console.log("Started");
-	client.user.setActivity("Playing jubeat");
+	client.user.setActivity("jubeat");
 });
 
 
