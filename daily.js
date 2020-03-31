@@ -1,7 +1,7 @@
 //The environment string loads the corresponding .env file from the config folder.
 //It controls the output channel and log file.
 //Current options are 'production' or 'test'
-environment = 'test'
+environment = 'production'
 
 require('./consoleTimestamp')()
 const {resolve} = require('path')
@@ -16,7 +16,7 @@ const client = new Discord.Client({disableEveryone: true})
 var image = 0
 
 
-const channel_general = '673516599851876384'
+const channel_general = '291802168372101120'
 const channel_cammy_server = '673516599851876384'
 
 
@@ -61,7 +61,7 @@ function getValue(){
                         if(err) throw err
                     })
         const warn_reset = "Smith image log was reset."
-        if (environment === 'test') {
+        if (environment === 'production') {
             client.channels.cache.get(channel_cammy_server).send(warn_reset)
         }
         console.log(`image = ${image}`)
