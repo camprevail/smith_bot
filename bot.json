@@ -2,7 +2,7 @@
   "name": "smith_bot",
   "script": "bot.js",
   "watch": true,
-  "ignore_watch" : ["assets", "node_modules", "logs/defaults-log.txt", "logs/log.txt", "logs/testlog.txt", "daily.js", "bot.json", "log.txt"],
+  "ignore_watch" : ["assets", "node_modules", "logs/daily_log.txt", "logs/defaults-log.txt", "logs/log.txt", "logs/testlog.txt", "daily.js", "bot.json", "log.txt"],
   "watch_options": {
     "followSymlinks": false,
   },
