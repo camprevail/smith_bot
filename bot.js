@@ -30,7 +30,7 @@ client.on("message", async message => {
 	const command = args.shift().toLowerCase();
 
     if(command === "daily"){
-        imagelog = fs.readFileSync(env.logfile).toString('utf-8')
+        imagelog = fs.readFileSync(env.daily_log).toString('utf-8')
         image_array = imagelog.replace(/\r\n|\n/g, ',').split(",").filter(Boolean)
         image = image_array.shift()
         await message.reply({

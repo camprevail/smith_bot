@@ -55,6 +55,9 @@ function getValue(){
             fs.writeFile(env.logfile, image_array.map(item => item + '\r\n').join().replace(/,/g, ''), (err) => {
                 if(err) throw err
             })
+            fs.writeFile(env.daily_log, image, (err) => {
+                            if(err) throw err
+                        })
     } else {
         image = defaults_array.shift()
         fs.writeFile(env.logfile, defaults_array.map(item => item + '\r\n').join().replace(/,/g, ''), (err) => {

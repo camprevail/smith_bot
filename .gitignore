@@ -4,4 +4,5 @@
 /node_modules
 /test.js
 /logs/log.txt
+/logs/daily_log.txt
 /log.txt
