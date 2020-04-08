@@ -1,8 +1,11 @@
 /.idea
 /node_modules
 /config/botconfig.json
-/node_modules
 /test.js
 /logs/log.txt
 /logs/daily_log.txt
 /log.txt
+/logs/emblem_log.txt
+/logs/emblem_daily.txt
+/dumbstuff
+/one-shot.js

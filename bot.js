@@ -12,6 +12,7 @@ const request = require('request');
 
 const config = require("./config/botconfig.json")
 image_folder = resolve(__dirname,'./assets/') + path.sep
+emblem_folder = resolve(__dirname,'./assets/emblem-compiled/') + path.sep
 const Discord = require("discord.js")
 const client = new Discord.Client({disableEveryone: true})
 var image = 0
@@ -33,9 +34,18 @@ client.on("message", async message => {
         imagelog = fs.readFileSync(env.daily_log).toString('utf-8')
         image_array = imagelog.replace(/\r\n|\n/g, ',').split(",").filter(Boolean)
         image = image_array.shift()
-        await message.reply("Here's today's jubeat news again.", {
+        await message.reply("Here's today's jubeat news.", {
                     files: [image_folder+image+".png"]
-                    }).catch(error => console.log(`Couldn't post because of: ${error}`))
+                    }).catch(error => console.log(`Couldn't post image because of: ${error}`))
+    }
+
+    if(command === "emblem"){
+        emblemlog = fs.readFileSync(env.emblem_daily).toString('utf-8')
+        emblem_array = emblemlog.replace(/\r\n|\n/g, ',').split(",").filter(Boolean)
+        emblem = emblem_array.shift()
+        await message.reply("Here's today's SP emblem.", {
+                    files: [emblem_folder+emblem+".png"]
+                    }).catch(error => console.log(`Couldn't post emblem because of: ${error}`))
     }
 
     if(command === "e"){
