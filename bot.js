@@ -11,7 +11,8 @@ const fs = require('fs')
 const request = require('request');
 
 const config = require("./config/botconfig.json")
-image_folder = resolve(__dirname,'./assets/') + path.sep
+const emblem_name = require("./assets/emblem-names.json")
+image_folder = resolve(__dirname,'./assets/tips/') + path.sep
 emblem_folder = resolve(__dirname,'./assets/emblem-compiled/') + path.sep
 const Discord = require("discord.js")
 const client = new Discord.Client({disableEveryone: true})
@@ -43,7 +44,7 @@ client.on("message", async message => {
         emblemlog = fs.readFileSync(env.emblem_daily).toString('utf-8')
         emblem_array = emblemlog.replace(/\r\n|\n/g, ',').split(",").filter(Boolean)
         emblem = emblem_array.shift()
-        await message.reply("Here's today's SP emblem.", {
+        await message.reply(`Here's today's SP emblem.\nTitle: ${emblem_name[emblem]}`, {
                     files: [emblem_folder+emblem+".png"]
                     }).catch(error => console.log(`Couldn't post emblem because of: ${error}`))
     }

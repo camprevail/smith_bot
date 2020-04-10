@@ -10,6 +10,7 @@ env = require('dotenv').config({path: resolve(__dirname,`./config/${environment}
 console.log(env.logfile)
 
 const config = require("./config/botconfig.json")
+const emblem_name = require("./assets/emblem-names.json")
 image_folder = resolve(__dirname,'./assets/emblem-compiled/') + path.sep
 const Discord = require("discord.js")
 const client = new Discord.Client({disableEveryone: true})
@@ -77,7 +78,7 @@ function getValue(){
 async function post_image(image) {
 	if (image) { // if image is not 'undefined', which happens if you run out of images
         console.log(`Posting: ${image}`)
-        await client.channels.cache.get(env.output_channel).send("Here is today's SP emblem.", {
+        await client.channels.cache.get(env.output_channel).send(`Here's today's SP emblem.\nTitle: ${emblem_name[image]}`, {
             files: [image_folder+image+".png"]
             }).catch(error => console.log(`Couldn't post because of: ${error}`))
     } else {

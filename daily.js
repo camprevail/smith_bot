@@ -10,7 +10,7 @@ env = require('dotenv').config({path: resolve(__dirname,`./config/${environment}
 console.log(env.logfile)
 
 const config = require("./config/botconfig.json")
-image_folder = resolve(__dirname,'./assets/') + path.sep
+image_folder = resolve(__dirname,'./assets/tips/') + path.sep
 const Discord = require("discord.js")
 const client = new Discord.Client({disableEveryone: true})
 var image = 0
