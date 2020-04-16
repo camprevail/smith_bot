@@ -80,4 +80,13 @@ client.on("message", async message => {
 
 });
 
+client.on("message", async message => {
+	if(message.author.bot) return;
+	reactions = ['700402109140434945', '486747094653075476', '675424129712652318', '669294560312164353', '690274811183628350', '291855959381245952']
+	reaction = reactions[Math.floor(Math.random() * reactions.length)]
+	if (message.mentions.has(client.user)) {
+        message.react(reaction)
+	}
+});
+
 client.login(config.token);
