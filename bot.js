@@ -98,4 +98,13 @@ client.on("message", async message => {
     }
 });
 
+client.on("message", async message => {
+	if(message.author.bot) return;
+    const args = message.content.trim().split(/ +/g);
+    let username = message.mentions.users.first().username
+    if (args.length == 1 && args[0].slice(0, 3) == '<@!') {
+        await client.channels.cache.get(message.channel.id).send(`<:smithhandsrev:675424129712652318> ${username} summoning ritual <:smithhands:669294560312164353>`).catch(error => console.log(`Couldn't post info because of: ${error}`))
+    }
+});
+
 client.login(config.token);
