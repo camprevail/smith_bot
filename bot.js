@@ -89,4 +89,13 @@ client.on("message", async message => {
 	}
 });
 
+client.on("message", async message => {
+	if(message.author.bot) return;
+    if(message.content.indexOf(config.prefix) === 0 || message.content.indexOf(config.dotprefix) === 0) {} else {return}
+    const args = message.content.slice(1).trim().split(/ +/g);
+    if (args[args.length - 3].toLowerCase() == 'summoning' && args[args.length - 2].toLowerCase() == 'ritual') {
+        await client.channels.cache.get(message.channel.id).send(message.content.slice(1)).catch(error => console.log(`Couldn't post info because of: ${error}`))
+    }
+});
+
 client.login(config.token);
