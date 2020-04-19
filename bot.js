@@ -92,19 +92,52 @@ client.on("message", async message => {
 client.on("message", async message => {
 	if(message.author.bot) return;
     if(message.content.indexOf(config.prefix) === 0 || message.content.indexOf(config.dotprefix) === 0) {} else {return}
-    const args = message.content.slice(1).trim().split(/ +/g);
-    if (args[args.length - 3].toLowerCase() == 'summoning' && args[args.length - 2].toLowerCase() == 'ritual') {
-        await client.channels.cache.get(message.channel.id).send(message.content.slice(1)).catch(error => console.log(`Couldn't post info because of: ${error}`))
+    const args = message.content.slice(1).trim().split(/ +/g)
+    regex = RegExp(/!|#|:|```|\[|\{|\(|\)|\}|\]|\\r|\\n|\+|\?|\$|\^/g)
+    try {
+        if ( args.length == 5 && args[0].startsWith('<') && args[1].length > 4 && args[1].slice(0, 2) != '<@' && args[1].length < 32 && regex.test(args[1]) == false && args[args.length - 3].toLowerCase() == 'summoning' && args[args.length - 2].toLowerCase() == 'ritual') {
+            await client.channels.cache.get(message.channel.id).send(message.content.slice(1)).catch(error => console.log(`error at line 98: ${error}`))
+        } else if (args[1].slice(0, 2) == '<@') {
+            await message.reply('Mentions are not available for this version of the command.\nPlease see the pinned message in <#291802168372101120> for usage.').catch(error => console.log(`error at line 100: ${error}`))
+        }
+    } catch(err){
+        console.log(`error at line 103: ${err} from message: ${message.content}`)
     }
 });
 
 client.on("message", async message => {
 	if(message.author.bot) return;
     const args = message.content.trim().split(/ +/g);
-    let username = message.mentions.users.first().username
-    if (args.length == 1 && args[0].slice(0, 3) == '<@!') {
-        await client.channels.cache.get(message.channel.id).send(`<:smithhandsrev:675424129712652318> ${username} summoning ritual <:smithhands:669294560312164353>`).catch(error => console.log(`Couldn't post info because of: ${error}`))
+    var username
+    if (args.length == 1 && args[0].startsWith('<@')) {
+        try {
+            username = getUserFromMention(args[0])
+        } catch(err) {
+//            console.log(`error at line 117: ${err}`)
+        }
+        if (username) {
+            await client.channels.cache.get(message.channel.id).send(`<:smithhandsrev:675424129712652318> ${username} summoning ritual <:smithhands:669294560312164353>`).catch(error => console.log(`error at line 120: ${error}`))
+            username = null
+        }
     }
 });
+
+function getUserFromMention(mention) {
+	if (!mention) return;
+
+	if (mention.startsWith('<@') && mention.endsWith('>')) {
+		mention = mention.slice(2, -1);
+
+		if (mention.startsWith('!')) {
+			mention = mention.slice(1);
+		}
+		try {
+		    username = client.users.cache.get(mention).username
+		} catch(err) {
+		    console.log(`error at line 137: ${err} from mention: ${mention}`)
+		}
+		return username
+	}
+}
 
 client.login(config.token);
