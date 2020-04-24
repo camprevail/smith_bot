@@ -6,5 +6,7 @@ Linux crontab will manage the `daily.js` and `emblem.js` scripts to post an new 
 
 Current bot commands for all users are:  
 `.daily` (reposts current day's translated jubeat image from tex_l44fo_step_transition) 
-`.emblem` (reposts current day's SP emblem)
-`.e [insert any server emoji or animated emoji]` (Replies will full size emoji)
+`.emblem` (reposts current day's SP emblem)  
+`.e [insert any server emoji or animated emoji]` (Replies will full size emoji)  
+`[single user mention]` - O.O ???  
+`. [insert emoji] [insert name] summoning ritual [insert emoji]` - Custom summoning rituals  
