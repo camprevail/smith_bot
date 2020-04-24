@@ -93,7 +93,7 @@ client.on("message", async message => {
 	if(message.author.bot) return;
     if(message.content.indexOf(config.prefix) === 0 || message.content.indexOf(config.dotprefix) === 0) {} else {return}
     const args = message.content.slice(1).trim().split(/ +/g)
-    regex = RegExp(/!|#|:|```|\[|\{|\(|\)|\}|\]|\\r|\\n|\+|\?|\$|\^/g)
+    regex = RegExp(/!|#|:|```|\[|\{|\(|\)|\}|\]|\\r|\\n|\+|\?|\$|\^|[\u200B-\u200D\uFEFF]/g)
     try {
         if ( args.length == 5 && args[0].startsWith('<') && args[1].length > 4 && args[1].slice(0, 2) != '<@' && args[1].length < 32 && regex.test(args[1]) == false && args[args.length - 3].toLowerCase() == 'summoning' && args[args.length - 2].toLowerCase() == 'ritual') {
             await client.channels.cache.get(message.channel.id).send(message.content.slice(1)).catch(error => console.log(`error at line 98: ${error}`))
