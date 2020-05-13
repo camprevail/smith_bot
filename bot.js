@@ -122,6 +122,15 @@ client.on("message", async message => {
     }
 });
 
+client.on('guildMemberUpdate', async (oldMember, newMember) => {
+	// If the role(s) are present on the old member object but no longer on the new one (i.e role(s) were removed)
+	const addedRoles = newMember.roles.cache.filter(role => !oldMember.roles.cache.has(role.id));
+	if (addedRoles.map(r => r.name) == 'Confirmed') {
+	    await client.channels.cache.get('291802168372101120').send(`Welcome <@${oldMember.id}> <:smithowo:700402109140434945> Post food.`)
+	}
+
+});
+
 function getUserFromMention(mention) {
 	if (!mention) return;
 
