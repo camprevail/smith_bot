@@ -126,7 +126,7 @@ client.on('guildMemberUpdate', async (oldMember, newMember) => {
 	// If the role(s) are present on the old member object but no longer on the new one (i.e role(s) were removed)
 	const addedRoles = newMember.roles.cache.filter(role => !oldMember.roles.cache.has(role.id));
 	if (addedRoles.map(r => r.name) == 'Confirmed') {
-	    await client.channels.cache.get('291802168372101120').send(`Welcome <@${oldMember.id}> <:smithowo:700402109140434945> Post food.`)
+	    await client.channels.cache.get(env.output_channel).send(`Welcome <@${oldMember.id}> <:smithowo:700402109140434945> Post food.\nAlso, please review the server rules here: https://discord.com/channels/291800868171284480/296071002842988554/547872219770912815`)
 	}
 
 });
