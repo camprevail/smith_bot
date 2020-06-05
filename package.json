@@ -24,6 +24,9 @@
   "dependencies": {
     "discord.js": "git+https://github.com/discordjs/discord.js.git#stable",
     "dotenv": "^8.2.0",
-    "request": "^2.88.2"
+    "lodash": "^4.17.15",
+    "node-tweet-stream": "^2.0.3",
+    "request": "^2.88.2",
+    "twitter": "^1.7.1"
   }
 }

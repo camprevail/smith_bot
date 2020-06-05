@@ -9,6 +9,14 @@ path = require('path')
 env = require('dotenv').config({path: resolve(__dirname,`./config/${environment}.env`)}).parsed
 const fs = require('fs')
 const request = require('request');
+const Twitter = require('node-tweet-stream')
+_ = require('lodash')
+
+const isTweet = _.conforms({
+  id_str: _.isString,
+  text: _.isString,
+  in_reply_to_status_id: _.isNull
+})
 
 const config = require("./config/botconfig.json")
 const emblem_name = require("./assets/emblem-names.json")
@@ -18,6 +26,29 @@ const Discord = require("discord.js")
 const client = new Discord.Client({disableEveryone: true})
 var image = 0
 
+var stream = new Twitter({
+  consumer_key: config.consumer_key,
+  consumer_secret: config.consumer_secret,
+//  bearer_token: ''
+  token: config.access_token_key,
+  token_secret: config.access_token_secret
+});
+
+stream.follow(171715340) //jubeat_staff
+stream.on('tweet', function(data) {
+  if (isTweet(data) && data.user.id == 171715340) {
+    post(data.user.id_str, data.id_str)
+  }
+});
+stream.on('error', function(error) {
+  console.log(error);
+});
+
+async function post(userid, postid) {
+    await client.channels.cache.get(env.output_channel).send(`twitter@jubeat_staff https://twitter.com/${userid}/statuses/${postid}`).catch(error => console.log(`error at line 48: ${error}`))
+}
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 client.on("ready", async message => {
 	console.log("Started");
@@ -96,12 +127,12 @@ client.on("message", async message => {
     regex = RegExp(/!|#|:|```|\[|\{|\(|\)|\}|\]|\\r|\\n|\+|\?|\$|\^|[\u200B-\u200D\uFEFF]/g)
     try {
         if ( args.length == 5 && args[0].startsWith('<') && args[1].length > 4 && args[1].slice(0, 2) != '<@' && args[1].length < 32 && regex.test(args[1]) == false && args[args.length - 3].toLowerCase() == 'summoning' && args[args.length - 2].toLowerCase() == 'ritual') {
-            await client.channels.cache.get(message.channel.id).send(message.content.slice(1)).catch(error => console.log(`error at line 98: ${error}`))
+            await client.channels.cache.get(message.channel.id).send(message.content.slice(1)).catch(error => console.log(`error at line 130: ${error}`))
         } else if (args[1].slice(0, 2) == '<@') {
-            await message.reply('Mentions are not available for this version of the command.\nPlease see the pinned message in <#291802168372101120> for usage.').catch(error => console.log(`error at line 100: ${error}`))
+            await message.reply('Mentions are not available for this version of the command.\nPlease see the pinned message in <#291802168372101120> for usage.').catch(error => console.log(`error at line 132: ${error}`))
         }
     } catch(err){
-        console.log(`error at line 103: ${err} from message: ${message.content}`)
+        console.log(`error at line 135: ${err} from message: ${message.content}`)
     }
 });
 
@@ -116,7 +147,7 @@ client.on("message", async message => {
 //            console.log(`error at line 117: ${err}`)
         }
         if (username) {
-            await client.channels.cache.get(message.channel.id).send(`<:smithhandsrev:675424129712652318> ${username} summoning ritual <:smithhands:669294560312164353>`).catch(error => console.log(`error at line 120: ${error}`))
+            await client.channels.cache.get(message.channel.id).send(`<:smithhandsrev:675424129712652318> ${username} summoning ritual <:smithhands:669294560312164353>`).catch(error => console.log(`error at line 150: ${error}`))
             username = null
         }
     }
@@ -143,7 +174,7 @@ function getUserFromMention(mention) {
 		try {
 		    username = client.users.cache.get(mention).username
 		} catch(err) {
-		    console.log(`error at line 137: ${err} from mention: ${mention}`)
+		    console.log(`error at line 177: ${err} from mention: ${mention}`)
 		}
 		return username
 	}
