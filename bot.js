@@ -8,7 +8,8 @@ const {resolve} = require('path')
 path = require('path')
 env = require('dotenv').config({path: resolve(__dirname,`./config/${environment}.env`)}).parsed
 const fs = require('fs')
-const request = require('request');
+const bent = require('bent')
+const getBuffer = bent('buffer')
 const Twitter = require('node-tweet-stream')
 _ = require('lodash')
 
@@ -97,9 +98,7 @@ client.on("message", async message => {
 
         }
         console.log(`posting emoji ${emoji_id}`)
-        imagebuffer = request({ url, encoding: null }, (err, resp, buffer) => {
-            return buffer
-        });
+        imagebuffer = await getBuffer(url)
         channelid = message.channel.id
         message.channel.messages.fetch(message.id).then(async msg => {
             await message.reply({
