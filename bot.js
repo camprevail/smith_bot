@@ -24,7 +24,7 @@ const emblem_name = require("./assets/emblem-names.json")
 image_folder = resolve(__dirname,'./assets/tips/') + path.sep
 emblem_folder = resolve(__dirname,'./assets/emblem-compiled/') + path.sep
 const Discord = require("discord.js")
-const client = new Discord.Client({disableEveryone: true})
+const client = new Discord.Client({ disableMentions: 'everyone' })
 var image = 0
 
 var stream = new Twitter({
@@ -101,7 +101,7 @@ client.on("message", async message => {
         imagebuffer = await getBuffer(url)
         channelid = message.channel.id
         message.channel.messages.fetch(message.id).then(async msg => {
-            await message.reply({
+            await message.reply("", {
                         files: [imagebuffer]
                     }).catch(error => console.log(`Couldn't post emoji because of: ${error}`))
               if (msg) msg.delete();
