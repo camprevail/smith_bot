@@ -89,12 +89,14 @@ client.on("message", async message => {
         cmdparse = args[0].split(/[:<>]/).filter(Boolean)
         if(cmdparse[0] === 'a'){
             emoji_id = cmdparse[2]
+            emoji_ext = '.gif'
             url = `https://cdn.discordapp.com/emojis/${emoji_id}.gif`
         } else if (Number.isInteger(parseInt(cmdparse[1]))){
             emoji_id = cmdparse[1]
+            emoji_ext = '.png'
             url = `https://cdn.discordapp.com/emojis/${emoji_id}.png`
         } else {
-            return message.reply("Sorry, you can't use that emoji.")
+            return message.reply("Sorry, you can't use regular emojis.")
 
         }
         console.log(`posting emoji ${emoji_id}`)
@@ -102,7 +104,7 @@ client.on("message", async message => {
         channelid = message.channel.id
         message.channel.messages.fetch(message.id).then(async msg => {
             await message.reply("", {
-                        files: [imagebuffer]
+                        files: [{attachment: imagebuffer, name: `${emoji_id}${emoji_ext}`}]
                     }).catch(error => console.log(`Couldn't post emoji because of: ${error}`))
               if (msg) msg.delete();
         });
