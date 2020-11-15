@@ -24,7 +24,7 @@ const emblem_name = require("./assets/emblem-names.json")
 image_folder = resolve(__dirname,'./assets/tips/') + path.sep
 emblem_folder = resolve(__dirname,'./assets/emblem-compiled/') + path.sep
 const Discord = require("discord.js")
-const client = new Discord.Client({ disableMentions: 'everyone' })
+const client = new Discord.Client({ ws: { intents: new Discord.Intents(Discord.Intents.ALL) }});
 var image = 0
 
 var stream = new Twitter({
