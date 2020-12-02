@@ -21,7 +21,7 @@ const isTweet = _.conforms({
 
 const config = require("./config/botconfig.json")
 const emblem_name = require("./assets/emblem-names.json")
-image_folder = resolve(__dirname,'./assets/tips/') + path.sep
+image_folder = resolve(__dirname,'./assets/memories/output/') + path.sep
 emblem_folder = resolve(__dirname,'./assets/emblem-compiled/') + path.sep
 const Discord = require("discord.js")
 const client = new Discord.Client({ ws: { intents: new Discord.Intents(Discord.Intents.ALL) }});
@@ -64,16 +64,16 @@ client.on("message", async message => {
 	const command = args.shift().toLowerCase();
 
     if(command === "daily"){
-        imagelog = fs.readFileSync(env.daily_log).toString('utf-8')
+        imagelog = fs.readFileSync(env.memory_today).toString('utf-8')
         image_array = imagelog.replace(/\r\n|\n/g, ',').split(",").filter(Boolean)
         image = image_array.shift()
-        await message.reply("Here's today's jubeat news.", {
-                    files: [image_folder+image+".png"]
-                    }).catch(error => console.log(`Couldn't post image because of: ${error}`))
+        await message.reply("Here's today's Lost Memory.", {
+                    files: [image_folder+image]
+                    }).catch(error => console.log(`Couldn't post memories image because of: ${error}`))
     }
 
     if(command === "emblem"){
-        emblemlog = fs.readFileSync(env.emblem_daily).toString('utf-8')
+        emblemlog = fs.readFileSync(env.emblem_today).toString('utf-8')
         emblem_array = emblemlog.replace(/\r\n|\n/g, ',').split(",").filter(Boolean)
         emblem = emblem_array.shift()
         await message.reply(`Here's today's SP emblem.\nTitle: ${emblem_name[emblem]}`, {
@@ -125,6 +125,9 @@ client.on("message", async message => {
 	if(message.author.bot) return;
     if(message.content.indexOf(config.prefix) === 0 || message.content.indexOf(config.dotprefix) === 0) {} else {return}
     const args = message.content.slice(1).trim().split(/ +/g)
+    const args2 = args
+    const command = args2.shift().toLowerCase();
+    if (command == "e" || command == "daily" || command == "emblem") {return}
     regex = RegExp(/!|#|:|```|\[|\{|\(|\)|\}|\]|\\r|\\n|\+|\?|\$|\^|[\u200B-\u200D\uFEFF]/g)
     try {
         if ( args.length == 5 && args[0].startsWith('<') && args[1].length > 4 && args[1].slice(0, 2) != '<@' && args[1].length < 32 && regex.test(args[1]) == false && args[args.length - 3].toLowerCase() == 'summoning' && args[args.length - 2].toLowerCase() == 'ritual') {
@@ -140,7 +143,10 @@ client.on("message", async message => {
 client.on("message", async message => {
 	if(message.author.bot) return;
     const args = message.content.trim().split(/ +/g);
+    const args2 = args
+    const command = args2.shift().toLowerCase();
     var username
+    if (command == "e" || command == "daily" || command == "emblem") {return}
     if (args.length == 1 && args[0].startsWith('<@')) {
         try {
             username = getUserFromMention(args[0])

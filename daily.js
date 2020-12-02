@@ -7,10 +7,9 @@ require('./consoleTimestamp')()
 const {resolve} = require('path')
 path = require('path')
 env = require('dotenv').config({path: resolve(__dirname,`./config/${environment}.env`)}).parsed
-console.log(env.logfile)
 
 const config = require("./config/botconfig.json")
-image_folder = resolve(__dirname,'./assets/tips/') + path.sep
+image_folder = resolve(__dirname,'./assets/memories/output/') + path.sep
 const Discord = require("discord.js")
 const client = new Discord.Client({disableEveryone: true})
 var image = 0
@@ -46,28 +45,28 @@ async function loggedImages() {
 
 function getValue(){
 	fs = require('fs')
-	imagelog = fs.readFileSync(env.logfile).toString('utf-8')
-	defaults_log = fs.readFileSync(env.defaults_log).toString('utf-8')
+	imagelog = fs.readFileSync(env.memories_log).toString('utf-8')
+	defaults_log = fs.readFileSync(env.memories_defaults).toString('utf-8')
     image_array = imagelog.replace(/\r\n|\n/g, ',').split(",").filter(Boolean)
     defaults_array = defaults_log.replace(/\r\n|\n/g, ',').split(",").filter(Boolean)
     image = image_array.shift()
     if (image) {
-            fs.writeFile(env.logfile, image_array.map(item => item + '\r\n').join().replace(/,/g, ''), (err) => {
+            fs.writeFile(env.memories_log, image_array.map(item => item + '\r\n').join().replace(/,/g, ''), (err) => {
                 if(err) throw err
             })
-            fs.writeFile(env.daily_log, image, (err) => {
+            fs.writeFile(env.memory_today, image, (err) => {
                             if(err) throw err
                         })
     } else {
         image = defaults_array.shift()
-        fs.writeFile(env.logfile, defaults_array.map(item => item + '\r\n').join().replace(/,/g, ''), (err) => {
+        fs.writeFile(env.memories_log, defaults_array.map(item => item + '\r\n').join().replace(/,/g, ''), (err) => {
                         if(err) throw err
                     })
-        const warn_reset = "Smith image log was reset."
+        const warn_reset = "Smith memories log was reset."
         if (environment === 'production') {
             client.channels.cache.get(channel_cammy_server).send(warn_reset)
         }
-        console.log(`image = ${image}`)
+//        console.log(`image = ${image}`)
         console.log(warn_reset)
         return image
     }
@@ -77,8 +76,8 @@ function getValue(){
 async function post_image(image) {
 	if (image) { // if image is not 'undefined', which happens if you run out of images
         console.log(`Posting: ${image}`)
-        await client.channels.cache.get(env.output_channel).send("Good day, foodbeat players. Here's today's jubeat news.", {
-            files: [image_folder+image+".png"]
+        await client.channels.cache.get(env.output_channel).send("Good day, foodbeat players. Starting today, we'll be looking through my album of lost memories. Do enjoy!", {
+            files: [image_folder+image]
             }).catch(error => console.log(`Couldn't post because of: ${error}`))
     } else {
         console.log(`Not attempting to post image: ${image}`)

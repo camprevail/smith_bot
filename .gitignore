@@ -2,11 +2,14 @@
 /node_modules
 /config/botconfig.json
 /test.js
-/logs/log.txt
-/logs/daily_log.txt
+/logs/tips_log.txt
+/logs/tip_today.txt
 /log.txt
 /logs/emblem_log.txt
-/logs/emblem_daily.txt
+/logs/emblem_today.txt
+/logs/testlog.txt
+/logs/memories_log.txt
+/logs/memory_today.txt
 /dumbstuff
 /one-shot.js
 /twitter.js

@@ -1,3 +1,4 @@
+event_01_1.png
 event_01_2.png
 event_01_3.png
 event_01_4.png

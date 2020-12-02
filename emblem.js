@@ -56,7 +56,7 @@ function getValue(){
             fs.writeFile(env.emblem_log, image_array.map(item => item + '\r\n').join().replace(/,/g, ''), (err) => {
                 if(err) throw err
             })
-            fs.writeFile(env.emblem_daily, image, (err) => {
+            fs.writeFile(env.emblem_today, image, (err) => {
                             if(err) throw err
                         })
     } else {
@@ -68,7 +68,7 @@ function getValue(){
         if (environment === 'production') {
             client.channels.cache.get(channel_cammy_server).send(warn_reset)
         }
-        console.log(`image = ${image}`)
+//        console.log(`image = ${image}`)
         console.log(warn_reset)
         return image
     }
