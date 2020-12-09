@@ -76,7 +76,7 @@ function getValue(){
 async function post_image(image) {
 	if (image) { // if image is not 'undefined', which happens if you run out of images
         console.log(`Posting: ${image}`)
-        await client.channels.cache.get(env.output_channel).send("Good day, foodbeat players. Starting today, we'll be looking through my album of lost memories. Do enjoy!", {
+        await client.channels.cache.get(env.output_channel).send("Good day, foodbeat players. Here is today's memory.", {
             files: [image_folder+image]
             }).catch(error => console.log(`Couldn't post because of: ${error}`))
     } else {
