@@ -1,7 +1,7 @@
 //The environment string loads the corresponding .env file from the config folder.
 //It controls the output channel and log file.
 //Current options are 'production' or 'test'
-environment = 'test'
+environment = 'production'
 
 require('./consoleTimestamp')()
 const {resolve} = require('path')
