@@ -1,7 +1,7 @@
 //The environment string loads the corresponding .env file from the config folder.
 //It controls the output channel and log file.
 //Current options are 'production' or 'test'
-environment = 'production'
+environment = 'test'
 
 require('./consoleTimestamp')()
 const {resolve} = require('path')
@@ -73,12 +73,20 @@ client.on("message", async message => {
     }
 
     if(command === "emblem"){
-        emblemlog = fs.readFileSync(env.emblem_today).toString('utf-8')
-        emblem_array = emblemlog.replace(/\r\n|\n/g, ',').split(",").filter(Boolean)
-        emblem = emblem_array.shift()
-        await message.reply(`Here's today's SP emblem.\nTitle: ${emblem_name[emblem]}`, {
-                    files: [emblem_folder+emblem+".png"]
-                    }).catch(error => console.log(`Couldn't post emblem because of: ${error}`))
+        if(args.length > 0 && args[0] in emblem_name) {
+            await message.reply(`Title: ${emblem_name[args[0]]}`, {
+                        files: [emblem_folder+args[0]+".png"]
+                        }).catch(error => console.log(`Couldn't post emblem because of: ${error}`))
+        } else if(args.length == 0){
+            emblemlog = fs.readFileSync(env.emblem_today).toString('utf-8')
+            emblem_array = emblemlog.replace(/\r\n|\n/g, ',').split(",").filter(Boolean)
+            emblem = emblem_array.shift()
+            await message.reply(`Here's today's SP emblem.\nTitle: ${emblem_name[emblem]}`, {
+                        files: [emblem_folder+emblem+".png"]
+                        }).catch(error => console.log(`Couldn't post emblem because of: ${error}`))
+        } else {
+            await message.reply(`Please choose an id from 1 to ${Object.keys(emblem_name).length}.`)
+        }
     }
 
     if(command === "e"){
