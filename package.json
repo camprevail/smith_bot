@@ -1,7 +1,7 @@
 {
   "name": "smith_bot",
   "version": "1.0.0",
-  "description": "Discord bot for the foodbeat players",
+  "description": "Written, hosted and maintained by Cammy.",
   "main": "bot.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,12 +10,7 @@
     "type": "git",
     "url": "git+https://github.com/camprevail/smith_bot.git"
   },
-  "keywords": [
-    "jubeat",
-    "discord",
-    "bot"
-  ],
-  "author": "cam_prevail",
+  "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/camprevail/smith_bot/issues"
@@ -23,12 +18,10 @@
   "homepage": "https://github.com/camprevail/smith_bot#readme",
   "dependencies": {
     "bent": "^7.3.12",
-    "discord.js": "github:discordjs/discord.js#master",
+    "discord.js": "^12.5.3",
     "dotenv": "^8.2.0",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.21",
     "node-tweet-stream": "^2.0.3",
-    "pet-pet-gif": "^1.0.8",
-    "request": "^2.88.2",
-    "twitter": "^1.7.1"
+    "pet-pet-gif": "^1.0.8"
   }
 }
