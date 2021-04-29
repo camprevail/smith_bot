@@ -12,6 +12,8 @@ const bent = require('bent')
 const getBuffer = bent('buffer')
 const Twitter = require('node-tweet-stream')
 _ = require('lodash')
+const petPetGif = require('pet-pet-gif')
+
 
 const isTweet = _.conforms({
   id_str: _.isString,
@@ -118,6 +120,32 @@ client.on("message", async message => {
         });
     }
 
+
+    if(command === "petpet"){
+        emoji_id = null
+        url = null
+
+        if(!args[0]){return message.reply('\nUse the .petpet command + any custom emoji, with a space in between.\nRegular/animated emoji are not supported, sowwy.')}
+        cmdparse = args[0].split(/[:<>]/).filter(Boolean)
+        if(cmdparse[0] === 'a'){
+            return message.reply("Sorry, you can't use animated emojis.")
+        } else if (Number.isInteger(parseInt(cmdparse[1]))){
+            emoji_id = cmdparse[1]
+            emoji_ext = '.gif'
+            url = `https://cdn.discordapp.com/emojis/${emoji_id}.png`
+        } else {
+            return message.reply("Sorry, you can't use regular emojis.")
+        }
+        console.log(`posting petpet from emoji ${emoji_id}`)
+        petpet = await petPetGif(url)
+        channelid = message.channel.id
+        message.channel.messages.fetch(message.id).then(async msg => {
+            await message.reply("", {
+                        files: [{attachment: petpet, name: `petpet-${emoji_id}${emoji_ext}`}]
+                    }).catch(error => console.log(`Couldn't post petpet because of: ${error}`))
+              if (msg) msg.delete();
+        });
+    }
 });
 
 client.on("message", async message => {
@@ -129,44 +157,44 @@ client.on("message", async message => {
 	}
 });
 
-client.on("message", async message => {
-	if(message.author.bot) return;
-    if(message.content.indexOf(config.prefix) === 0 || message.content.indexOf(config.dotprefix) === 0) {} else {return}
-    const args = message.content.slice(1).trim().split(/ +/g)
-    const args2 = args
-    const command = args2.shift().toLowerCase();
-    if (command == "e" || command == "daily" || command == "emblem") {return}
-    regex = RegExp(/!|#|:|```|\[|\{|\(|\)|\}|\]|\\r|\\n|\+|\?|\$|\^|[\u200B-\u200D\uFEFF]/g)
-    try {
-        if ( args.length == 5 && args[0].startsWith('<') && args[1].length > 4 && args[1].slice(0, 2) != '<@' && args[1].length < 32 && regex.test(args[1]) == false && args[args.length - 3].toLowerCase() == 'summoning' && args[args.length - 2].toLowerCase() == 'ritual') {
-            await client.channels.cache.get(message.channel.id).send(message.content.slice(1)).catch(error => console.log(`error at line 130: ${error}`))
-        } else if (args[1].slice(0, 2) == '<@') {
-            await message.reply('Mentions are not available for this version of the command.\nPlease see the pinned message in <#291802168372101120> for usage.').catch(error => console.log(`error at line 132: ${error}`))
-        }
-    } catch(err){
-        console.log(`error at line 135: ${err} from message: ${message.content}`)
-    }
-});
+//client.on("message", async message => {
+//	if(message.author.bot) return;
+//    if(message.content.indexOf(config.prefix) === 0 || message.content.indexOf(config.dotprefix) === 0) {} else {return}
+//    const args = message.content.slice(1).trim().split(/ +/g)
+//    const args2 = args
+//    const command = args2.shift().toLowerCase();
+//    if (command == "e" || command == "daily" || command == "emblem") {return}
+//    regex = RegExp(/!|#|:|```|\[|\{|\(|\)|\}|\]|\\r|\\n|\+|\?|\$|\^|[\u200B-\u200D\uFEFF]/g)
+//    try {
+//        if ( args.length == 5 && args[0].startsWith('<') && args[1].length > 4 && args[1].slice(0, 2) != '<@' && args[1].length < 32 && regex.test(args[1]) == false && args[args.length - 3].toLowerCase() == 'summoning' && args[args.length - 2].toLowerCase() == 'ritual') {
+//            await client.channels.cache.get(message.channel.id).send(message.content.slice(1)).catch(error => console.log(`error at line 130: ${error}`))
+//        } else if (args[1].slice(0, 2) == '<@') {
+//            await message.reply('Mentions are not available for this version of the command.\nPlease see the pinned message in <#291802168372101120> for usage.').catch(error => console.log(`error at line 132: ${error}`))
+//        }
+//    } catch(err){
+//        console.log(`error at line 175: ${err} from message: ${message.content}`)
+//    }
+//});
 
-client.on("message", async message => {
-	if(message.author.bot) return;
-    const args = message.content.trim().split(/ +/g);
-    const args2 = args
-    const command = args2.shift().toLowerCase();
-    var username
-    if (command == "e" || command == "daily" || command == "emblem") {return}
-    if (args.length == 1 && args[0].startsWith('<@')) {
-        try {
-            username = getUserFromMention(args[0])
-        } catch(err) {
-//            console.log(`error at line 117: ${err}`)
-        }
-        if (username) {
-            await client.channels.cache.get(message.channel.id).send(`<:smithhandsrev:675424129712652318> ${username} summoning ritual <:smithhands:669294560312164353>`).catch(error => console.log(`error at line 150: ${error}`))
-            username = null
-        }
-    }
-});
+//client.on("message", async message => {
+//	if(message.author.bot) return;
+//    const args = message.content.trim().split(/ +/g);
+//    const args2 = args
+//    const command = args2.shift().toLowerCase();
+//    var username
+//    if (command == "e" || command == "daily" || command == "emblem") {return}
+//    if (args.length == 1 && args[0].startsWith('<@')) {
+//        try {
+//            username = getUserFromMention(args[0])
+//        } catch(err) {
+////            console.log(`error at line 117: ${err}`)
+//        }
+//        if (username) {
+//            await client.channels.cache.get(message.channel.id).send(`<:smithhandsrev:675424129712652318> ${username} summoning ritual <:smithhands:669294560312164353>`).catch(error => console.log(`error at line 150: ${error}`))
+//            username = null
+//        }
+//    }
+//});
 
 client.on('guildMemberUpdate', async (oldMember, newMember) => {
 	// If the role(s) are present on the old member object but no longer on the new one (i.e role(s) were removed)
@@ -177,22 +205,22 @@ client.on('guildMemberUpdate', async (oldMember, newMember) => {
 
 });
 
-function getUserFromMention(mention) {
-	if (!mention) return;
-
-	if (mention.startsWith('<@') && mention.endsWith('>')) {
-		mention = mention.slice(2, -1);
-
-		if (mention.startsWith('!')) {
-			mention = mention.slice(1);
-		}
-		try {
-		    username = client.users.cache.get(mention).username
-		} catch(err) {
-		    console.log(`error at line 177: ${err} from mention: ${mention}`)
-		}
-		return username
-	}
-}
+//function getUserFromMention(mention) {
+//	if (!mention) return;
+//
+//	if (mention.startsWith('<@') && mention.endsWith('>')) {
+//		mention = mention.slice(2, -1);
+//
+//		if (mention.startsWith('!')) {
+//			mention = mention.slice(1);
+//		}
+//		try {
+//		    username = client.users.cache.get(mention).username
+//		} catch(err) {
+//		    console.log(`error at line 177: ${err} from mention: ${mention}`)
+//		}
+//		return username
+//	}
+//}
 
 client.login(config.token);
