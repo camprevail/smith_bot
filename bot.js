@@ -116,7 +116,7 @@ client.on("message", async message => {
             await message.reply("", {
                         files: [{attachment: imagebuffer, name: `${emoji_id}${emoji_ext}`}]
                     }).catch(error => console.log(`Couldn't post emoji because of: ${error}`))
-              if (msg) msg.delete();
+//              if (msg) msg.delete();
         });
     }
 
@@ -143,7 +143,7 @@ client.on("message", async message => {
             await message.reply("", {
                         files: [{attachment: petpet, name: `petpet-${emoji_id}${emoji_ext}`}]
                     }).catch(error => console.log(`Couldn't post petpet because of: ${error}`))
-              if (msg) msg.delete();
+//              if (msg) msg.delete();
         });
     }
 });
