@@ -25,7 +25,7 @@
     "bent": "^7.3.12",
     "discord.js": "github:discordjs/discord.js#master",
     "dotenv": "^8.2.0",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.19",
     "node-tweet-stream": "^2.0.3",
     "pet-pet-gif": "^1.0.8",
     "request": "^2.88.2",
