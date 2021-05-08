@@ -41,16 +41,18 @@ var stream = new Twitter({
 });
 
 stream.follow(171715340) //jubeat_staff
+stream.follow(1377489900568649736) //jubeat_app
 stream.on('tweet', async function(data) {
-    if (isTweet(data) && data.user.id == 171715340) {
+    if (isTweet(data) && [171715340, 1377489900568649736].includes(data.user.id)) {
         text = ''
         if (data.hasOwnProperty('retweeted_status')) {
-            if (data.retweeted_status.truncated) {
-                text = data.retweeted_status.extended_tweet.full_text
-            }
-            else if (data.retweeted_status.display_text_range.toString() != '0,0'){
-                text = data.retweeted_status.text
-            }
+//            if (data.retweeted_status.truncated) {
+//                text = data.retweeted_status.extended_tweet.full_text
+//            }
+//            else if (data.retweeted_status.display_text_range.toString() != '0,0'){
+//                text = data.retweeted_status.text
+//            }
+            return
         }
         else if (data.display_text_range.toString() != '0,0'){
             text = data.text
