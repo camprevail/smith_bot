@@ -1,8 +1,9 @@
 //The environment string loads the corresponding .env file from the config folder.
 //It controls the output channel and log file.
 //Current options are 'production' or 'test'
-environment = 'production'
+environment = 'test'
 
+process.env.GOOGLE_APPLICATION_CREDENTIALS = './translate-api-key.json'
 require('./consoleTimestamp')()
 const {resolve} = require('path')
 path = require('path')
@@ -13,6 +14,8 @@ const getBuffer = bent('buffer')
 const Twitter = require('node-tweet-stream')
 _ = require('lodash')
 const petPetGif = require('pet-pet-gif')
+const {Translate} = require('@google-cloud/translate').v2
+const GT = new Translate();
 
 
 const isTweet = _.conforms({
@@ -30,25 +33,61 @@ const client = new Discord.Client({ ws: { intents: new Discord.Intents(Discord.I
 var image = 0
 
 var stream = new Twitter({
-  consumer_key: config.consumer_key,
-  consumer_secret: config.consumer_secret,
-//  bearer_token: ''
-  token: config.access_token_key,
-  token_secret: config.access_token_secret
+    consumer_key: config.consumer_key,
+    consumer_secret: config.consumer_secret,
+    //  bearer_token: ''
+    token: config.access_token_key,
+    token_secret: config.access_token_secret
 });
 
 stream.follow(171715340) //jubeat_staff
-stream.on('tweet', function(data) {
-  if (isTweet(data) && data.user.id == 171715340) {
-    post(data.user.id_str, data.id_str)
-  }
-});
-stream.on('error', function(error) {
-  console.log(error);
-});
+stream.on('tweet', async function(data) {
+    if (isTweet(data) && data.user.id == 171715340) {
+        text = ''
+        if (data.hasOwnProperty('retweeted_status')) {
+            if (data.retweeted_status.truncated) {
+                text = data.retweeted_status.extended_tweet.full_text
+            }
+            else if (data.retweeted_status.display_text_range.toString() != '0,0'){
+                text = data.retweeted_status.text
+            }
+        }
+        else if (data.display_text_range.toString() != '0,0'){
+            text = data.text
+        }
 
-async function post(userid, postid) {
-    await client.channels.cache.get(env.output_channel).send(`twitter@jubeat_staff https://twitter.com/${userid}/statuses/${postid}`).catch(error => console.log(`error at line 48: ${error}`))
+        if (text) {
+            translatedtext = await translate(text)
+            await post(data.user.id_str, data.id_str, translatedtext)
+        }
+        else {
+            await post(data.user.id_str, data.id_str)
+        }
+
+    }
+});
+//stream.on('error', function(error) {
+//    console.log(error);
+//});
+
+async function translate(text){
+    options = {
+        from: 'ja',
+        to: 'en'
+    };
+    translateResult = await GT.translate(text, options).catch(error => console.log(error))
+    translatedtext = translateResult[0]
+    console.log(`translated tweet: ${translatedtext}`)
+    return translatedtext
+}
+
+async function post(userid, postid, text = '') {
+    if (text) {
+        await client.channels.cache.get(env.output_channel).send(`twitter@jubeat_staff https://twitter.com/${userid}/statuses/${postid}\n\`\`\`${text}\`\`\``).catch(error => console.log(`error in function "post": ${error}`))
+    }
+    else {
+        await client.channels.cache.get(env.output_channel).send(`twitter@jubeat_staff https://twitter.com/${userid}/statuses/${postid}`).catch(error => console.log(`error in function "post": ${error}`))
+    }
 }
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
