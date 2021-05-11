@@ -43,7 +43,7 @@ var stream = new Twitter({
 stream.follow(171715340) //jubeat_staff
 stream.follow(1377489900568649736) //jubeat_app
 stream.on('tweet', async function(data) {
-    if (isTweet(data) && [171715340, 1377489900568649736].includes(data.user.id)) {
+    if (isTweet(data) && ['171715340', '1377489900568649736'].includes(data.user.id_str)) {
         text = ''
         if (data.hasOwnProperty('retweeted_status')) {
 //            if (data.retweeted_status.truncated) {
@@ -66,6 +66,10 @@ stream.on('tweet', async function(data) {
             await post(data.user.id_str, data.id_str)
         }
 
+    }
+    else {
+        console.log(data)
+        console.log("The above tweet did not meet the if conditions.")
     }
 });
 //stream.on('error', function(error) {
