@@ -55,7 +55,11 @@ stream.on('tweet', async function(data) {
             return
         }
         else if (data.display_text_range.toString() != '0,0'){
-            text = data.text
+            if (data.truncated) {
+                text = data.extended_tweet.full_text
+            } else {
+                text = data.text
+            }
         }
 
         if (text) {
