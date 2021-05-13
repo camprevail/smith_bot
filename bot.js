@@ -71,10 +71,10 @@ stream.on('tweet', async function(data) {
         }
 
     }
-    else {
-        console.log(data)
-        console.log("The above tweet did not meet the if conditions.")
-    }
+//    else {
+//        console.log(data)
+//        console.log("The above tweet did not meet the if conditions.")
+//    }
 });
 //stream.on('error', function(error) {
 //    console.log(error);
