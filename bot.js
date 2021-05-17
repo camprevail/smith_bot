@@ -1,7 +1,7 @@
 //The environment string loads the corresponding .env file from the config folder.
 //It controls the output channel and log file.
 //Current options are 'production' or 'test'
-environment = 'production'
+environment = 'test'
 
 process.env.GOOGLE_APPLICATION_CREDENTIALS = './config/translate-api-key.json'
 require('./consoleTimestamp')()
@@ -42,39 +42,54 @@ var stream = new Twitter({
 
 stream.follow(171715340) //jubeat_staff
 stream.follow(1377489900568649736) //jubeat_app
+stream.follow(1377489900568649730) //jubeat app
+stream.follow(434280866) //cammy
 stream.on('tweet', async function(data) {
-    if (isTweet(data) && ['171715340', '1377489900568649736'].includes(data.user.id_str)) {
-        text = ''
-        if (data.hasOwnProperty('retweeted_status')) {
-//            if (data.retweeted_status.truncated) {
-//                text = data.retweeted_status.extended_tweet.full_text
-//            }
-//            else if (data.retweeted_status.display_text_range.toString() != '0,0'){
-//                text = data.retweeted_status.text
-//            }
-            return
-        }
-        else if (data.display_text_range.toString() != '0,0'){
-            if (data.truncated) {
-                text = data.extended_tweet.full_text
-            } else {
-                text = data.text
+    try {
+        if (isTweet(data) && ['171715340', '1377489900568649736', '434280866'].includes(data.user.id_str)) {
+            text = ''
+            if (data.hasOwnProperty('retweeted_status')) {
+    //            if (data.retweeted_status.truncated) {
+    //                text = data.retweeted_status.extended_tweet.full_text
+    //            }
+    //            else if (data.retweeted_status.display_text_range.toString() != '0,0'){
+    //                text = data.retweeted_status.text
+    //            }
+                return
             }
-        }
+            else if (data.hasOwnProperty('display_text_range') && data.display_text_range.toString() != '0,0'){
+                if (data.truncated) {
+                    text = data.extended_tweet.full_text
+                } else {
+                    text = data.text
+                }
+            }
+            else {
+                if (data.truncated) {
+                    text = data.extended_tweet.full_text
+                } else {
+                    text = data.text
+                }
+            }
 
-        if (text) {
-            translatedtext = await translate(text)
-            await post(data.user.id_str, data.id_str, translatedtext)
+            if (text) {
+                translatedtext = await translate(text)
+                await post(data.user.id_str, data.id_str, translatedtext)
+            }
+            else {
+                await post(data.user.id_str, data.id_str)
+            }
+
         }
         else {
-            await post(data.user.id_str, data.id_str)
+            console.log(data)
+            console.log("The above tweet did not meet the if conditions.")
         }
-
     }
-//    else {
-//        console.log(data)
-//        console.log("The above tweet did not meet the if conditions.")
-//    }
+    catch(error) {
+        console.log(data)
+        console.log(error)
+    }
 });
 //stream.on('error', function(error) {
 //    console.log(error);
@@ -93,10 +108,10 @@ async function translate(text){
 
 async function post(userid, postid, text = '') {
     if (text) {
-        await client.channels.cache.get(env.output_channel).send(`twitter@jubeat_staff https://twitter.com/${userid}/statuses/${postid}\n\`\`\`${text}\`\`\``).catch(error => console.log(`error in function "post": ${error}`))
+        await client.channels.cache.get(env.output_channel).send(`https://twitter.com/${userid}/statuses/${postid}\n\`\`\`${text}\`\`\``).catch(error => console.log(`error in function "post": ${error}`))
     }
     else {
-        await client.channels.cache.get(env.output_channel).send(`twitter@jubeat_staff https://twitter.com/${userid}/statuses/${postid}`).catch(error => console.log(`error in function "post": ${error}`))
+        await client.channels.cache.get(env.output_channel).send(`https://twitter.com/${userid}/statuses/${postid}`).catch(error => console.log(`error in function "post": ${error}`))
     }
 }
 
