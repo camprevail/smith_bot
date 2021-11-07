@@ -43,7 +43,7 @@ var stream = new Twitter({
 stream.follow(171715340) //jubeat_staff
 stream.follow(1377489900568649736) //jubeat_app
 stream.follow(1377489900568649730) //jubeat app
-stream.follow(434280866) //cammy
+//stream.follow(434280866) //cammy
 stream.on('tweet', async function(data) {
     try {
         if (isTweet(data) && ['171715340', '1377489900568649736', '434280866'].includes(data.user.id_str)) {
