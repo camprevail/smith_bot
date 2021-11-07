@@ -15,6 +15,9 @@ image_folder = resolve(__dirname,'./assets/emblem-compiled/') + path.sep
 const Discord = require("discord.js")
 const client = new Discord.Client({disableEveryone: true})
 var image = 0
+process.env.GOOGLE_APPLICATION_CREDENTIALS = './config/translate-api-key.json'
+const {Translate} = require('@google-cloud/translate').v2
+const GT = new Translate();
 
 
 const channel_general = '291802168372101120'
@@ -31,6 +34,16 @@ client.on("ready", async ready => {
 
 })
 
+async function translate(text){
+    options = {
+        from: 'ja',
+        to: 'en'
+    };
+    translateResult = await GT.translate(text, options).catch(error => console.log(error))
+    translatedtext = translateResult[0]
+    console.log(`translated emblem: ${translatedtext}`)
+    return translatedtext
+}
 
 //logs values recorded
 async function loggedImages() {
@@ -78,7 +91,8 @@ function getValue(){
 async function post_image(image) {
 	if (image) { // if image is not 'undefined', which happens if you run out of images
         console.log(`Posting: ${image}`)
-        await client.channels.cache.get(env.output_channel).send(`Here's today's SP emblem.\nTitle: ${emblem_name[image]}`, {
+        translatedtext = await translate(emblem_name[image])
+        await client.channels.cache.get(env.output_channel).send(`Here's today's SP emblem.\nTitle: ${emblem_name[image]}\n(${translatedtext})`, {
             files: [image_folder+image+".png"]
             }).catch(error => console.log(`Couldn't post because of: ${error}`))
     } else {
