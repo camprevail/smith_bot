@@ -157,6 +157,7 @@ client.on("message", async message => {
     }
 
     if(command === "say"){
+        if(!args[0]){return message.reply('\nThe syntax is .say [channel name, no hashtag] [messsage]')}
         if(!admins.includes(message.author.id.toString())) {return console.log(`${message.author.name} is not an admin.`)}
         if(message.channel.type != 'dm') {return}
         guild = client.guilds.cache.get(config.guild)
