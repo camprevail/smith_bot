@@ -30,6 +30,7 @@ image_folder = resolve(__dirname,'./assets/memories/output/') + path.sep
 emblem_folder = resolve(__dirname,'./assets/emblem-compiled/') + path.sep
 const Discord = require("discord.js")
 const client = new Discord.Client({ ws: { intents: new Discord.Intents(Discord.Intents.ALL) }});
+const admins = config.admins
 var image = 0
 
 var stream = new Twitter({
@@ -153,6 +154,16 @@ client.on("message", async message => {
         } else {
             await message.reply(`Please choose an id from 1 to ${Object.keys(emblem_name).length}.`)
         }
+    }
+
+    if(command === "say"){
+        if(!admins.includes(message.author.id.toString())) {return console.log(`${message.author.name} is not an admin.`)}
+        if(message.channel.type != 'dm') {return}
+        guild = client.guilds.cache.get(config.guild)
+        channel = guild.channels.cache.find(channel => channel.name.toLowerCase() === args[0])
+        if(channel == null) {return message.reply('Channel does not exist')}
+        args.shift()
+        return channel.send(args.join(' '))
     }
 
     if(command === "e"){
