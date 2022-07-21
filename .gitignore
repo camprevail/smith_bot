@@ -17,3 +17,7 @@
 translate-api-key.json
 /random.js
 /logs/cron.log
+/config/.env
+/bot.log
+/bot.py
+/environment

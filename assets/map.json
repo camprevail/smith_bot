@@ -1,0 +1,2027 @@
+{
+  "1": {
+    "id": 1,
+    "name": "bass 2 bass",
+    "name_read": "ベースツーベース スペシャル",
+    "layer1": "emb_1_0001_01_1.png",
+    "layer2": "emb_1_0001_03_2.png",
+    "layer3": "emb_1_0001_01_3.png",
+    "layer4": "emb_1_0001_01_4.png"
+  },
+  "2": {
+    "id": 2,
+    "name": "Snow Goose",
+    "name_read": "スノーグース スペシャル",
+    "layer1": "emb_1_0006_01_1.png",
+    "layer2": "emb_1_0006_03_2.png",
+    "layer3": "emb_1_0006_01_3.png",
+    "layer4": "emb_1_0006_01_4.png"
+  },
+  "3": {
+    "id": 3,
+    "name": "IN THE NAME OF LOVE",
+    "name_read": "インザネームオブラブ スペシャル",
+    "layer1": "emb_1_0011_01_1.png",
+    "layer2": "emb_1_0011_03_2.png",
+    "layer3": "emb_1_0011_01_3.png",
+    "layer4": "emb_1_0011_01_4.png"
+  },
+  "4": {
+    "id": 4,
+    "name": "ウィリアム・テル序曲",
+    "name_read": "ウィリアムテルジョキョク スペシャル",
+    "layer1": "emb_1_0021_01_1.png",
+    "layer2": "emb_1_0021_03_2.png",
+    "layer3": "emb_1_0021_01_3.png",
+    "layer4": "emb_1_0021_01_4.png"
+  },
+  "5": {
+    "id": 5,
+    "name": "隅田川夏恋歌",
+    "name_read": "スミダガワカレンカ スペシャル",
+    "layer1": "emb_1_0022_01_1.png",
+    "layer2": "emb_1_0022_03_2.png",
+    "layer3": "emb_1_0022_01_3.png",
+    "layer4": "emb_1_0022_01_4.png"
+  },
+  "6": {
+    "id": 6,
+    "name": "AREA 51",
+    "name_read": "エリアフィフティーワン スペシャル",
+    "layer1": "emb_1_0023_01_1.png",
+    "layer2": "emb_1_0023_03_2.png",
+    "layer3": "emb_1_0023_01_3.png",
+    "layer4": "emb_1_0023_01_4.png"
+  },
+  "7": {
+    "id": 7,
+    "name": "スペースカーニバル",
+    "name_read": "スペースカーニバル スペシャル",
+    "layer1": "emb_1_0037_01_1.png",
+    "layer2": "emb_1_0037_03_2.png",
+    "layer3": "emb_1_0037_01_3.png",
+    "layer4": "emb_1_0037_01_4.png"
+  },
+  "8": {
+    "id": 8,
+    "name": "Love km",
+    "name_read": "ラブキロメートル スペシャル",
+    "layer1": "emb_1_0047_01_1.png",
+    "layer2": "emb_1_0047_03_2.png",
+    "layer3": "emb_1_0047_01_3.png",
+    "layer4": "emb_1_0047_01_4.png"
+  },
+  "9": {
+    "id": 9,
+    "name": "Sweet Rain",
+    "name_read": "スウィートレイン スペシャル",
+    "layer1": "emb_1_0056_01_1.png",
+    "layer2": "emb_1_0056_03_2.png",
+    "layer3": "emb_1_0056_01_3.png",
+    "layer4": "emb_1_0056_01_4.png"
+  },
+  "10": {
+    "id": 10,
+    "name": "キルト",
+    "name_read": "キルト スペシャル",
+    "layer1": "emb_1_0060_01_1.png",
+    "layer2": "emb_1_0060_03_2.png",
+    "layer3": "emb_1_0060_01_3.png",
+    "layer4": "emb_1_0060_01_4.png"
+  },
+  "11": {
+    "id": 11,
+    "name": "concon",
+    "name_read": "コンコン スペシャル",
+    "layer1": "emb_1_0063_01_1.png",
+    "layer2": "emb_1_0063_03_2.png",
+    "layer3": "emb_1_0063_01_3.png",
+    "layer4": "emb_1_0063_01_4.png"
+  },
+  "12": {
+    "id": 12,
+    "name": "HEAVENLY MOON",
+    "name_read": "ヘブンリームーン スペシャル",
+    "layer1": "emb_1_0081_01_1.png",
+    "layer2": "emb_1_0081_03_2.png",
+    "layer3": "emb_1_0081_01_3.png",
+    "layer4": "emb_1_0081_01_4.png"
+  },
+  "13": {
+    "id": 13,
+    "name": "フー・フローツ",
+    "name_read": "フーフローツ スペシャル",
+    "layer1": "emb_1_0104_01_1.png",
+    "layer2": "emb_1_0104_03_2.png",
+    "layer3": "emb_1_0104_01_3.png",
+    "layer4": "emb_1_0104_01_4.png"
+  },
+  "14": {
+    "id": 14,
+    "name": "†渚の小悪魔ラヴリィ〜レイディオ†",
+    "name_read": "ナギサノコアクマラブリィーレイディオ スペシャル",
+    "layer1": "emb_1_0117_01_1.png",
+    "layer2": "emb_1_0117_03_2.png",
+    "layer3": "emb_1_0117_01_3.png",
+    "layer4": "emb_1_0117_01_4.png"
+  },
+  "15": {
+    "id": 15,
+    "name": "Triple Journey",
+    "name_read": "トリプルジャーニー スペシャル",
+    "layer1": "emb_1_0234_01_1.png",
+    "layer2": "emb_1_0234_03_2.png",
+    "layer3": "emb_1_0234_01_3.png",
+    "layer4": "emb_1_0234_01_4.png"
+  },
+  "16": {
+    "id": 16,
+    "name": "time granular",
+    "name_read": "タイムグラニュラー スペシャル",
+    "layer1": "emb_1_0294_01_1.png",
+    "layer2": "emb_1_0294_03_2.png",
+    "layer3": "emb_1_0294_01_3.png",
+    "layer4": "emb_1_0294_01_4.png"
+  },
+  "17": {
+    "id": 17,
+    "name": "ドーパミン",
+    "name_read": "ドーパミン スペシャル",
+    "layer1": "emb_1_0304_01_1.png",
+    "layer2": "emb_1_0304_03_2.png",
+    "layer3": "emb_1_0304_01_3.png",
+    "layer4": "emb_1_0304_01_4.png"
+  },
+  "18": {
+    "id": 18,
+    "name": "アレスの楯",
+    "name_read": "アレスノタテ スペシャル",
+    "layer1": "emb_1_0339_01_1.png",
+    "layer2": "emb_1_0339_03_2.png",
+    "layer3": "emb_1_0339_01_3.png",
+    "layer4": "emb_1_0339_01_4.png"
+  },
+  "19": {
+    "id": 19,
+    "name": "Two Pianists",
+    "name_read": "トゥーピアニスツ スペシャル",
+    "layer1": "emb_1_0340_01_1.png",
+    "layer2": "emb_1_0340_03_2.png",
+    "layer3": "emb_1_0340_01_3.png",
+    "layer4": "emb_1_0340_01_4.png"
+  },
+  "20": {
+    "id": 20,
+    "name": "Braid & Blade",
+    "name_read": "ブレイドアンドブレード スペシャル",
+    "layer1": "emb_1_0341_01_1.png",
+    "layer2": "emb_1_0341_03_2.png",
+    "layer3": "emb_1_0341_01_3.png",
+    "layer4": "emb_1_0341_01_4.png"
+  },
+  "21": {
+    "id": 21,
+    "name": "Too Late Snow",
+    "name_read": "トゥーレイトスノウ スペシャル",
+    "layer1": "emb_1_0344_01_1.png",
+    "layer2": "emb_1_0344_03_2.png",
+    "layer3": "emb_1_0344_01_3.png",
+    "layer4": "emb_1_0344_01_4.png"
+  },
+  "22": {
+    "id": 22,
+    "name": "jubeatくん",
+    "name_read": "ユビートクン スペシャル",
+    "layer1": "emb_9_0002_01_1.png",
+    "layer2": "emb_9_0002_01_2.png",
+    "layer3": "emb_9_0002_01_3.png",
+    "layer4": "emb_9_0002_01_4.png"
+  },
+  "23": {
+    "id": 23,
+    "name": "オコジョ",
+    "name_read": "オコジョ スペシャル",
+    "layer1": "emb_9_0003_01_1.png",
+    "layer2": "emb_9_0003_01_2.png",
+    "layer3": "emb_9_0003_01_3.png",
+    "layer4": "emb_9_0003_01_4.png"
+  },
+  "24": {
+    "id": 24,
+    "name": "ユビ子",
+    "name_read": "ユビコ スペシャル",
+    "layer1": "emb_9_0004_01_1.png",
+    "layer2": "emb_9_0004_01_2.png",
+    "layer3": "emb_9_0004_01_3.png",
+    "layer4": "emb_9_0004_01_4.png"
+  },
+  "25": {
+    "id": 25,
+    "name": "ねんごろねこ",
+    "name_read": "ネンゴロネコ スペシャル",
+    "layer1": "emb_9_0005_01_1.png",
+    "layer2": "emb_9_0005_01_2.png",
+    "layer3": "emb_9_0005_01_3.png",
+    "layer4": "emb_9_0005_01_4.png"
+  },
+  "26": {
+    "id": 26,
+    "name": "コンシェルジュ",
+    "name_read": "コンシェルジュ スペシャル",
+    "layer1": "emb_9_0006_01_1.png",
+    "layer2": "emb_9_0006_01_2.png",
+    "layer3": "emb_9_0006_01_3.png",
+    "layer4": "emb_9_0006_01_4.png"
+  },
+  "27": {
+    "id": 27,
+    "name": "ローラー星人",
+    "name_read": "ローラーセイジン スペシャル",
+    "layer1": "emb_9_0007_01_1.png",
+    "layer2": "emb_9_0007_01_2.png",
+    "layer3": "emb_9_0007_01_3.png",
+    "layer4": "emb_9_0007_01_4.png"
+  },
+  "28": {
+    "id": 28,
+    "name": "スミス",
+    "name_read": "スミス スペシャル",
+    "layer1": "emb_9_0008_01_1.png",
+    "layer2": "emb_9_0008_01_2.png",
+    "layer3": "emb_9_0008_01_3.png",
+    "layer4": "emb_9_0008_01_4.png"
+  },
+  "29": {
+    "id": 29,
+    "name": "prop",
+    "name_read": "プロップ スペシャル",
+    "layer1": "emb_9_0009_01_1.png",
+    "layer2": "emb_9_0009_01_2.png",
+    "layer3": "emb_9_0009_01_3.png",
+    "layer4": "emb_9_0009_01_4.png"
+  },
+  "30": {
+    "id": 30,
+    "name": "ロケテ",
+    "name_read": "ロケテ スペシャル",
+    "layer1": "emb_9_0010_01_1.png",
+    "layer2": "emb_9_0010_01_2.png",
+    "layer3": "emb_9_0010_01_3.png",
+    "layer4": "emb_9_0010_01_4.png"
+  },
+  "31": {
+    "id": 31,
+    "name": "まっする",
+    "name_read": "マッスル スペシャル",
+    "layer1": "emb_9_0011_01_1.png",
+    "layer2": "emb_9_0011_01_2.png",
+    "layer3": "emb_9_0011_01_3.png",
+    "layer4": "emb_9_0011_01_4.png"
+  },
+  "32": {
+    "id": 32,
+    "name": "e-AMUSEMENT PASS特典 / Smith in prop world",
+    "name_read": "イーアミューズメントパストクテン スミスプロップワアルド スペシャル",
+    "layer1": "emb_9_0012_01_1.png",
+    "layer2": "emb_9_0012_01_2.png",
+    "layer3": "emb_9_0012_01_3.png",
+    "layer4": "emb_9_0012_01_4.png"
+  },
+  "33": {
+    "id": 33,
+    "name": "e-AMUSEMENT PASS特典 / geometric pattern",
+    "name_read": "イーアミューズメントパストクテン ジオメトリックパタアン スペシャル",
+    "layer1": "emb_9_0013_01_1.png",
+    "layer2": "emb_9_0013_01_2.png",
+    "layer3": "emb_9_0013_01_3.png",
+    "layer4": "emb_9_0013_01_4.png"
+  },
+  "34": {
+    "id": 34,
+    "name": "GIGA BREAK",
+    "name_read": "ギガブレイク スペシャル",
+    "layer1": "emb_1_0003_01_1.png",
+    "layer2": "emb_1_0003_03_2.png",
+    "layer3": "emb_1_0003_01_3.png",
+    "layer4": "emb_1_0003_01_4.png"
+  },
+  "35": {
+    "id": 35,
+    "name": "Icicles",
+    "name_read": "アイシクルズ スペシャル",
+    "layer1": "emb_1_0004_01_1.png",
+    "layer2": "emb_1_0004_03_2.png",
+    "layer3": "emb_1_0004_01_3.png",
+    "layer4": "emb_1_0004_01_4.png"
+  },
+  "36": {
+    "id": 36,
+    "name": "Cassis",
+    "name_read": "カシス スペシャル",
+    "layer1": "emb_1_0144_01_1.png",
+    "layer2": "emb_1_0144_03_2.png",
+    "layer3": "emb_1_0144_01_3.png",
+    "layer4": "emb_1_0144_01_4.png"
+  },
+  "37": {
+    "id": 37,
+    "name": "つぼみ",
+    "name_read": "ツボミ スペシャル",
+    "layer1": "emb_1_0204_01_1.png",
+    "layer2": "emb_1_0204_03_2.png",
+    "layer3": "emb_1_0204_01_3.png",
+    "layer4": "emb_1_0204_01_4.png"
+  },
+  "38": {
+    "id": 38,
+    "name": "カラルの月",
+    "name_read": "カラルノツキ スペシャル",
+    "layer1": "emb_1_0222_01_1.png",
+    "layer2": "emb_1_0222_03_2.png",
+    "layer3": "emb_1_0222_01_3.png",
+    "layer4": "emb_1_0222_01_4.png"
+  },
+  "39": {
+    "id": 39,
+    "name": "イ号零型",
+    "name_read": "イゴウゼロガタ スペシャル",
+    "layer1": "emb_1_0243_01_1.png",
+    "layer2": "emb_1_0243_03_2.png",
+    "layer3": "emb_1_0243_01_3.png",
+    "layer4": "emb_1_0243_01_4.png"
+  },
+  "40": {
+    "id": 40,
+    "name": "ハンガリー舞曲 第5番 (jubeat version)",
+    "name_read": "ハンガリーブキョクダイゴバンユビートバージョン スペシャル",
+    "layer1": "emb_1_0320_01_1.png",
+    "layer2": "emb_1_0320_03_2.png",
+    "layer3": "emb_1_0320_01_3.png",
+    "layer4": "emb_1_0320_01_4.png"
+  },
+  "41": {
+    "id": 41,
+    "name": "overcomplexification",
+    "name_read": "オーバーコンプレクシフィケーション スペシャル",
+    "layer1": "emb_1_0343_01_1.png",
+    "layer2": "emb_1_0343_03_2.png",
+    "layer3": "emb_1_0343_01_3.png",
+    "layer4": "emb_1_0343_01_4.png"
+  },
+  "42": {
+    "id": 42,
+    "name": "レイシスIII",
+    "name_read": "レイシス スペシャル",
+    "layer1": "emb_9_0014_01_1.png",
+    "layer2": "emb_9_0014_01_2.png",
+    "layer3": "emb_9_0014_01_3.png",
+    "layer4": "emb_9_0014_01_4.png"
+  },
+  "43": {
+    "id": 43,
+    "name": "烈風刀 vs 雷刀",
+    "name_read": "レフトブイエスライト スペシャル",
+    "layer1": "emb_9_0015_01_1.png",
+    "layer2": "emb_9_0015_01_2.png",
+    "layer3": "emb_9_0015_01_3.png",
+    "layer4": "emb_9_0015_01_4.png"
+  },
+  "44": {
+    "id": 44,
+    "name": "ボルテナイザー・マキシマ -GRAVITY-",
+    "name_read": "ボルテナイザアマキシマグラビティ スペシャル",
+    "layer1": "emb_9_0016_01_1.png",
+    "layer2": "emb_9_0016_01_2.png",
+    "layer3": "emb_9_0016_01_3.png",
+    "layer4": "emb_9_0016_01_4.png"
+  },
+  "45": {
+    "id": 45,
+    "name": "POINT ZERO",
+    "name_read": "ポイントゼロ スペシャル",
+    "layer1": "emb_1_0126_01_1.png",
+    "layer2": "emb_1_0126_03_2.png",
+    "layer3": "emb_1_0126_01_3.png",
+    "layer4": "emb_1_0126_01_4.png"
+  },
+  "46": {
+    "id": 46,
+    "name": "Energy",
+    "name_read": "エナジイ スペシャル",
+    "layer1": "emb_1_0295_01_1.png",
+    "layer2": "emb_1_0295_03_2.png",
+    "layer3": "emb_1_0295_01_3.png",
+    "layer4": "emb_1_0295_01_4.png"
+  },
+  "47": {
+    "id": 47,
+    "name": "BisCo",
+    "name_read": "ビスコ スペシャル",
+    "layer1": "emb_9_0017_01_1.png",
+    "layer2": "emb_9_0017_01_2.png",
+    "layer3": "emb_9_0017_01_3.png",
+    "layer4": "emb_9_0017_01_4.png"
+  },
+  "48": {
+    "id": 48,
+    "name": "Life Connection",
+    "name_read": "ライフコネクション スペシャル",
+    "layer1": "emb_1_0244_01_1.png",
+    "layer2": "emb_1_0244_03_2.png",
+    "layer3": "emb_1_0244_01_3.png",
+    "layer4": "emb_1_0244_01_4.png"
+  },
+  "49": {
+    "id": 49,
+    "name": "発見！よみがえったBEMANI遺跡",
+    "name_read": "ハッケンヨミガエッタビイマニイセキ スペシャル",
+    "layer1": "emb_9_0354_01_1.png",
+    "layer2": "emb_9_0354_01_2.png",
+    "layer3": "emb_9_0354_01_3.png",
+    "layer4": "emb_9_0354_01_4.png"
+  },
+  "50": {
+    "id": 50,
+    "name": "BEMANI SUMMER DIARY 2015",
+    "name_read": "ビイマニサマアダイアリイニセンジュウゴ スペシャル",
+    "layer1": "emb_9_0355_01_1.png",
+    "layer2": "emb_9_0355_01_2.png",
+    "layer3": "emb_9_0355_01_3.png",
+    "layer4": "emb_9_0355_01_4.png"
+  },
+  "51": {
+    "id": 51,
+    "name": "SWEET HOME PARTY",
+    "name_read": "スウィートホームパーティー スペシャル",
+    "layer1": "emb_1_0358_01_1.png",
+    "layer2": "emb_1_0358_03_2.png",
+    "layer3": "emb_1_0358_01_3.png",
+    "layer4": "emb_1_0358_01_4.png"
+  },
+  "52": {
+    "id": 52,
+    "name": "レイシスIII -Halloween ver.-",
+    "name_read": "レイシス ハロウィンバージョン スペシャル",
+    "layer1": "emb_9_0018_01_1.png",
+    "layer2": "emb_9_0018_01_2.png",
+    "layer3": "emb_9_0018_01_3.png",
+    "layer4": "emb_9_0018_01_4.png"
+  },
+  "53": {
+    "id": 53,
+    "name": "量子の海のリントヴルム",
+    "name_read": "リョウシノウミノリントヴルム スペシャル",
+    "layer1": "emb_1_0078_01_1.png",
+    "layer2": "emb_1_0078_03_2.png",
+    "layer3": "emb_1_0078_01_3.png",
+    "layer4": "emb_1_0078_01_4.png"
+  },
+  "54": {
+    "id": 54,
+    "name": "龍と少女とデコヒーレンス",
+    "name_read": "リュウトショウジョトデコヒーレンス スペシャル",
+    "layer1": "emb_1_0383_01_1.png",
+    "layer2": "emb_1_0383_03_2.png",
+    "layer3": "emb_1_0383_01_3.png",
+    "layer4": "emb_1_0383_01_4.png"
+  },
+  "55": {
+    "id": 55,
+    "name": "日向美ビタースイーツ♪",
+    "name_read": "ヒナタビビタースイーツ スペシャル",
+    "layer1": "emb_9_0019_01_1.png",
+    "layer2": "emb_9_0019_01_2.png",
+    "layer3": "emb_9_0019_01_3.png",
+    "layer4": "emb_9_0019_01_4.png"
+  },
+  "56": {
+    "id": 56,
+    "name": "天空の華",
+    "name_read": "テンクウノハナ スペシャル",
+    "layer1": "emb_1_0361_01_1.png",
+    "layer2": "emb_1_0361_03_2.png",
+    "layer3": "emb_1_0361_01_3.png",
+    "layer4": "emb_1_0361_01_4.png"
+  },
+  "57": {
+    "id": 57,
+    "name": "日向美ちくわ姫",
+    "name_read": "ヒナタビチクワヒメ スペシャル",
+    "layer1": "emb_9_0020_01_1.png",
+    "layer2": "emb_9_0020_01_2.png",
+    "layer3": "emb_9_0020_01_3.png",
+    "layer4": "emb_9_0020_01_4.png"
+  },
+  "58": {
+    "id": 58,
+    "name": "ここなつ",
+    "name_read": "ココナツ スペシャル",
+    "layer1": "emb_9_0021_01_1.png",
+    "layer2": "emb_9_0021_01_2.png",
+    "layer3": "emb_9_0021_01_3.png",
+    "layer4": "emb_9_0021_01_4.png"
+  },
+  "59": {
+    "id": 59,
+    "name": "7 Colors",
+    "name_read": "セブンカラーズ スペシャル",
+    "layer1": "emb_1_0328_01_1.png",
+    "layer2": "emb_1_0328_03_2.png",
+    "layer3": "emb_1_0328_01_3.png",
+    "layer4": "emb_1_0328_01_4.png"
+  },
+  "60": {
+    "id": 60,
+    "name": "MUSECA イリル",
+    "name_read": "ミュゼカ イリル スペシャル",
+    "layer1": "emb_9_0022_01_1.png",
+    "layer2": "emb_9_0022_01_2.png",
+    "layer3": "emb_9_0022_01_3.png",
+    "layer4": "emb_9_0022_01_4.png"
+  },
+  "61": {
+    "id": 61,
+    "name": "MUSECA スミスなアイツ",
+    "name_read": "ミュゼカ スミスナアイツ スペシャル",
+    "layer1": "emb_9_0022_01_1.png",
+    "layer2": "emb_9_0023_01_2.png",
+    "layer3": "emb_9_0022_01_3.png",
+    "layer4": "emb_9_0022_01_4.png"
+  },
+  "62": {
+    "id": 62,
+    "name": "アストライアの双皿",
+    "name_read": "アストライアノソウベイ スペシャル",
+    "layer1": "emb_1_0103_01_1.png",
+    "layer2": "emb_1_0103_03_2.png",
+    "layer3": "emb_1_0103_01_3.png",
+    "layer4": "emb_1_0103_01_4.png"
+  },
+  "63": {
+    "id": 63,
+    "name": "Trick or jubeat!",
+    "name_read": "トリック オア ユビイト スペシャル",
+    "layer1": "emb_9_0024_01_1.png",
+    "layer2": "emb_9_0024_01_2.png",
+    "layer3": "emb_9_0024_01_3.png",
+    "layer4": "emb_9_0024_01_4.png"
+  },
+  "64": {
+    "id": 64,
+    "name": "ULTIMATE TRACKS -東方妖々夢＆輝針城-",
+    "name_read": "アルティメット トラックス トウホウヨウヨウム アンド キシンジョウ スペシャル",
+    "layer1": "emb_9_0025_01_1.png",
+    "layer2": "emb_9_0025_01_2.png",
+    "layer3": "emb_9_0025_01_3.png",
+    "layer4": "emb_9_0025_01_4.png"
+  },
+  "65": {
+    "id": 65,
+    "name": "ひなビタ♪紅葉まつり",
+    "name_read": "ヒナビタ モミジマツリ スペシャル",
+    "layer1": "emb_9_0026_01_1.png",
+    "layer2": "emb_9_0026_01_2.png",
+    "layer3": "emb_9_0026_01_3.png",
+    "layer4": "emb_9_0026_01_4.png"
+  },
+  "66": {
+    "id": 66,
+    "name": "霖が哭く",
+    "name_read": "リンガナク スペシャル",
+    "layer1": "emb_1_0372_01_1.png",
+    "layer2": "emb_1_0372_03_2.png",
+    "layer3": "emb_1_0372_01_3.png",
+    "layer4": "emb_1_0372_01_4.png"
+  },
+  "67": {
+    "id": 67,
+    "name": "Thank You Merry Christmas",
+    "name_read": "サンキューメリークリスマス スペシャル",
+    "layer1": "emb_1_0446_01_1.png",
+    "layer2": "emb_1_0446_03_2.png",
+    "layer3": "emb_1_0446_01_3.png",
+    "layer4": "emb_1_0446_01_4.png"
+  },
+  "68": {
+    "id": 68,
+    "name": "恋愛観測",
+    "name_read": "レンアイカンソク スペシャル",
+    "layer1": "emb_1_0281_01_1.png",
+    "layer2": "emb_1_0281_03_2.png",
+    "layer3": "emb_1_0281_01_3.png",
+    "layer4": "emb_1_0281_01_4.png"
+  },
+  "69": {
+    "id": 69,
+    "name": "アルストロメリア",
+    "name_read": "アルストロメリア スペシャル",
+    "layer1": "emb_1_0072_01_1.png",
+    "layer2": "emb_1_0072_03_2.png",
+    "layer3": "emb_1_0072_01_3.png",
+    "layer4": "emb_1_0072_01_4.png"
+  },
+  "70": {
+    "id": 70,
+    "name": "JOMANDA",
+    "name_read": "ジョマンダ スペシャル",
+    "layer1": "emb_1_0088_01_1.png",
+    "layer2": "emb_1_0088_03_2.png",
+    "layer3": "emb_1_0088_01_3.png",
+    "layer4": "emb_1_0088_01_4.png"
+  },
+  "71": {
+    "id": 71,
+    "name": "VALLIS-NERIA",
+    "name_read": "ヴァリスネリア スペシャル",
+    "layer1": "emb_1_0182_01_1.png",
+    "layer2": "emb_1_0182_03_2.png",
+    "layer3": "emb_1_0182_01_3.png",
+    "layer4": "emb_1_0182_01_4.png"
+  },
+  "72": {
+    "id": 72,
+    "name": "Megalara Garuda",
+    "name_read": "メガララガルーダ スペシャル",
+    "layer1": "emb_1_0434_01_1.png",
+    "layer2": "emb_1_0434_03_2.png",
+    "layer3": "emb_1_0434_01_3.png",
+    "layer4": "emb_1_0434_01_4.png"
+  },
+  "73": {
+    "id": 73,
+    "name": "ULTRA HAPPY MEGAMIX",
+    "name_read": "ウルトラハッピーメガミックス スペシャル",
+    "layer1": "emb_1_0430_01_1.png",
+    "layer2": "emb_1_0430_03_2.png",
+    "layer3": "emb_1_0430_01_3.png",
+    "layer4": "emb_1_0430_01_4.png"
+  },
+  "74": {
+    "id": 74,
+    "name": "Dragontail Butterfly",
+    "name_read": "ドラゴンテールバタフライ スペシャル",
+    "layer1": "emb_1_0112_01_1.png",
+    "layer2": "emb_1_0112_03_2.png",
+    "layer3": "emb_1_0112_01_3.png",
+    "layer4": "emb_1_0112_01_4.png"
+  },
+  "75": {
+    "id": 75,
+    "name": "Happy",
+    "name_read": "ハッピー スペシャル",
+    "layer1": "emb_1_0118_01_1.png",
+    "layer2": "emb_1_0118_03_2.png",
+    "layer3": "emb_1_0118_01_3.png",
+    "layer4": "emb_1_0118_01_4.png"
+  },
+  "76": {
+    "id": 76,
+    "name": "紅焔",
+    "name_read": "コウエン スペシャル",
+    "layer1": "emb_1_0147_01_1.png",
+    "layer2": "emb_1_0147_03_2.png",
+    "layer3": "emb_1_0147_01_3.png",
+    "layer4": "emb_1_0147_01_4.png"
+  },
+  "77": {
+    "id": 77,
+    "name": "レッドベルク",
+    "name_read": "レッドベルク スペシャル",
+    "layer1": "emb_9_0027_01_1.png",
+    "layer2": "emb_9_0027_03_2.png",
+    "layer3": "emb_9_0027_01_3.png",
+    "layer4": "emb_9_0027_01_4.png"
+  },
+  "78": {
+    "id": 78,
+    "name": "シアントル",
+    "name_read": "シアントル スペシャル",
+    "layer1": "emb_9_0028_01_1.png",
+    "layer2": "emb_9_0028_03_2.png",
+    "layer3": "emb_9_0028_01_3.png",
+    "layer4": "emb_9_0028_01_4.png"
+  },
+  "79": {
+    "id": 79,
+    "name": "グリネシア",
+    "name_read": "グリネシア スペシャル",
+    "layer1": "emb_9_0029_01_1.png",
+    "layer2": "emb_9_0029_03_2.png",
+    "layer3": "emb_9_0029_01_3.png",
+    "layer4": "emb_9_0029_01_4.png"
+  },
+  "80": {
+    "id": 80,
+    "name": "プラムパーク",
+    "name_read": "プラムパーク スペシャル",
+    "layer1": "emb_9_0030_01_1.png",
+    "layer2": "emb_9_0030_03_2.png",
+    "layer3": "emb_9_0030_01_3.png",
+    "layer4": "emb_9_0030_01_4.png"
+  },
+  "81": {
+    "id": 81,
+    "name": "ここなつ 水着",
+    "name_read": "ココナツ ミズギ スペシャル",
+    "layer1": "emb_9_0031_01_1.png",
+    "layer2": "emb_9_0031_03_2.png",
+    "layer3": "emb_9_0031_01_3.png",
+    "layer4": "emb_9_0031_01_4.png"
+  },
+  "82": {
+    "id": 82,
+    "name": "マインド・ゲーム",
+    "name_read": "マインドゲーム スペシャル",
+    "layer1": "emb_1_0273_01_1.png",
+    "layer2": "emb_1_0273_03_2.png",
+    "layer3": "emb_1_0273_01_3.png",
+    "layer4": "emb_1_0273_01_4.png"
+  },
+  "83": {
+    "id": 83,
+    "name": "Giant Otter Family",
+    "name_read": "ジャイアントオッターファミリー スペシャル",
+    "layer1": "emb_1_0433_01_1.png",
+    "layer2": "emb_1_0433_03_2.png",
+    "layer3": "emb_1_0433_01_3.png",
+    "layer4": "emb_1_0433_01_4.png"
+  },
+  "84": {
+    "id": 84,
+    "name": "FLOWER",
+    "name_read": "フラワー スペシャル",
+    "layer1": "emb_1_0057_01_1.png",
+    "layer2": "emb_1_0057_03_2.png",
+    "layer3": "emb_1_0057_01_3.png",
+    "layer4": "emb_1_0057_01_4.png"
+  },
+  "85": {
+    "id": 85,
+    "name": "FLOWER デフォルメ",
+    "name_read": "フラワー デフォルメ スペシャル",
+    "layer1": "emb_1_0057_01_1.png",
+    "layer2": "emb_1_0449_03_2.png",
+    "layer3": "emb_1_0057_01_3.png",
+    "layer4": "emb_1_0057_01_4.png"
+  },
+  "86": {
+    "id": 86,
+    "name": "ナナホシ",
+    "name_read": "ナナホシ スペシャル",
+    "layer1": "emb_1_0089_01_1.png",
+    "layer2": "emb_1_0089_03_2.png",
+    "layer3": "emb_1_0089_01_3.png",
+    "layer4": "emb_1_0089_01_4.png"
+  },
+  "87": {
+    "id": 87,
+    "name": "robin",
+    "name_read": "ロビン スペシャル",
+    "layer1": "emb_1_0250_01_1.png",
+    "layer2": "emb_1_0250_03_2.png",
+    "layer3": "emb_1_0250_01_3.png",
+    "layer4": "emb_1_0250_01_4.png"
+  },
+  "88": {
+    "id": 88,
+    "name": "ススススペースハリネズミ",
+    "name_read": "ススススペースハリネズミ スペシャル",
+    "layer1": "emb_1_0374_01_1.png",
+    "layer2": "emb_1_0374_03_2.png",
+    "layer3": "emb_1_0374_01_3.png",
+    "layer4": "emb_1_0374_01_4.png"
+  },
+  "89": {
+    "id": 89,
+    "name": "まり花 魔法少女",
+    "name_read": "マリカ マホウショウジョ スペシャル",
+    "layer1": "emb_9_0032_01_1.png",
+    "layer2": "emb_9_0032_03_2.png",
+    "layer3": "emb_9_0032_01_3.png",
+    "layer4": "emb_9_0032_01_4.png"
+  },
+  "90": {
+    "id": 90,
+    "name": "イブ 聖騎士",
+    "name_read": "イブ セイキシ スペシャル",
+    "layer1": "emb_9_0033_01_1.png",
+    "layer2": "emb_9_0033_03_2.png",
+    "layer3": "emb_9_0033_01_3.png",
+    "layer4": "emb_9_0033_01_4.png"
+  },
+  "91": {
+    "id": 91,
+    "name": "めう けものつかい",
+    "name_read": "メウ ケモノツカイ スペシャル",
+    "layer1": "emb_9_0034_01_1.png",
+    "layer2": "emb_9_0034_03_2.png",
+    "layer3": "emb_9_0034_01_3.png",
+    "layer4": "emb_9_0034_01_4.png"
+  },
+  "92": {
+    "id": 92,
+    "name": "咲子 賢者",
+    "name_read": "サキコ ケンジャ スペシャル",
+    "layer1": "emb_9_0035_01_1.png",
+    "layer2": "emb_9_0035_03_2.png",
+    "layer3": "emb_9_0035_01_3.png",
+    "layer4": "emb_9_0035_01_4.png"
+  },
+  "93": {
+    "id": 93,
+    "name": "凛 ガンナー",
+    "name_read": "リン ガンナー スペシャル",
+    "layer1": "emb_9_0036_01_1.png",
+    "layer2": "emb_9_0036_03_2.png",
+    "layer3": "emb_9_0036_01_3.png",
+    "layer4": "emb_9_0036_01_4.png"
+  },
+  "94": {
+    "id": 94,
+    "name": "夏陽 侍",
+    "name_read": "ナツヒ サムライ スペシャル",
+    "layer1": "emb_9_0037_01_1.png",
+    "layer2": "emb_9_0037_03_2.png",
+    "layer3": "emb_9_0037_01_3.png",
+    "layer4": "emb_9_0037_01_4.png"
+  },
+  "95": {
+    "id": 95,
+    "name": "心菜 忍者",
+    "name_read": "ココナ ニンジャ スペシャル",
+    "layer1": "emb_9_0038_01_1.png",
+    "layer2": "emb_9_0038_03_2.png",
+    "layer3": "emb_9_0038_01_3.png",
+    "layer4": "emb_9_0038_01_4.png"
+  },
+  "96": {
+    "id": 96,
+    "name": "バビロニアの旅人たち",
+    "name_read": "バビロニアノタビビトタチ スペシャル",
+    "layer1": "emb_1_0460_01_1.png",
+    "layer2": "emb_1_0460_03_2.png",
+    "layer3": "emb_1_0460_01_3.png",
+    "layer4": "emb_1_0460_01_4.png"
+  },
+  "97": {
+    "id": 97,
+    "name": "こびふくろう",
+    "name_read": "コビフクロウ スペシャル",
+    "layer1": "emb_9_0039_01_1.png",
+    "layer2": "emb_9_0039_01_2.png",
+    "layer3": "emb_9_0039_01_3.png",
+    "layer4": "emb_9_0039_01_4.png"
+  },
+  "98": {
+    "id": 98,
+    "name": "変じゃない!!",
+    "name_read": "ヘンジャナイ スペシャル",
+    "layer1": "emb_1_0396_01_1.png",
+    "layer2": "emb_1_0396_03_2.png",
+    "layer3": "emb_1_0396_01_3.png",
+    "layer4": "emb_1_0396_01_4.png"
+  },
+  "99": {
+    "id": 99,
+    "name": "グレイス -Winter ver.-",
+    "name_read": "グレイス ウィンターバージョン スペシャル",
+    "layer1": "emb_9_0040_01_1.png",
+    "layer2": "emb_9_0040_01_2.png",
+    "layer3": "emb_9_0040_01_3.png",
+    "layer4": "emb_9_0040_01_4.png"
+  },
+  "100": {
+    "id": 100,
+    "name": "Happiness on the tart!",
+    "name_read": "ハピネスオンザタルト スペシャル",
+    "layer1": "emb_9_0041_01_1.png",
+    "layer2": "emb_9_0041_03_2.png",
+    "layer3": "emb_9_0041_01_3.png",
+    "layer4": "emb_9_0041_01_4.png"
+  },
+  "101": {
+    "id": 101,
+    "name": "フー・フローツ -10th anniversary ver.-",
+    "name_read": "フーフローツ テンス アニバーサリー バージョン スペシャル",
+    "layer1": "emb_9_0042_01_1.png",
+    "layer2": "emb_9_0042_03_2.png",
+    "layer3": "emb_9_0042_01_3.png",
+    "layer4": "emb_9_0042_01_4.png"
+  },
+  "102": {
+    "id": 102,
+    "name": "スペースカーニバル -10th anniversary ver.-",
+    "name_read": "スペースカーニバル テンス アニバーサリー バージョン スペシャル",
+    "layer1": "emb_9_0043_01_1.png",
+    "layer2": "emb_9_0043_03_2.png",
+    "layer3": "emb_9_0043_01_3.png",
+    "layer4": "emb_9_0043_01_4.png"
+  },
+  "103": {
+    "id": 103,
+    "name": "マインド・ゲーム -10th anniversary ver.-",
+    "name_read": "マインドゲーム テンス アニバーサリー バージョン スペシャル",
+    "layer1": "emb_9_0044_01_1.png",
+    "layer2": "emb_9_0044_03_2.png",
+    "layer3": "emb_9_0044_01_3.png",
+    "layer4": "emb_9_0044_01_4.png"
+  },
+  "104": {
+    "id": 104,
+    "name": "Macuilxochitl -10th anniversary ver.-",
+    "name_read": "マクイルショチトル テンス アニバーサリー バージョン スペシャル",
+    "layer1": "emb_9_0045_01_1.png",
+    "layer2": "emb_9_0045_03_2.png",
+    "layer3": "emb_9_0045_01_3.png",
+    "layer4": "emb_9_0045_01_4.png"
+  },
+  "105": {
+    "id": 105,
+    "name": "cute animals -10th anniversary ver.-",
+    "name_read": "キュート アニマルズ テンス アニバーサリー バージョン スペシャル",
+    "layer1": "emb_9_0046_01_1.png",
+    "layer2": "emb_9_0046_03_2.png",
+    "layer3": "emb_9_0046_01_3.png",
+    "layer4": "emb_9_0046_01_4.png"
+  },
+  "106": {
+    "id": 106,
+    "name": "アストライアの双皿 -10th anniversary ver.-",
+    "name_read": "アストライアノソウベイ テンス アニバーサリー バージョン スペシャル",
+    "layer1": "emb_9_0047_01_1.png",
+    "layer2": "emb_9_0047_03_2.png",
+    "layer3": "emb_9_0047_01_3.png",
+    "layer4": "emb_9_0047_01_4.png"
+  },
+  "107": {
+    "id": 107,
+    "name": "TSAR BOMBA -10th anniversary ver.-",
+    "name_read": "ツァーリボンバ テンス アニバーサリー バージョン スペシャル",
+    "layer1": "emb_9_0048_01_1.png",
+    "layer2": "emb_9_0048_03_2.png",
+    "layer3": "emb_9_0048_01_3.png",
+    "layer4": "emb_9_0048_01_4.png"
+  },
+  "108": {
+    "id": 108,
+    "name": "キルト -10th anniversary ver.-",
+    "name_read": "キルト テンス アニバーサリー バージョン スペシャル",
+    "layer1": "emb_9_0049_01_1.png",
+    "layer2": "emb_9_0049_03_2.png",
+    "layer3": "emb_9_0049_01_3.png",
+    "layer4": "emb_9_0049_01_4.png"
+  },
+  "109": {
+    "id": 109,
+    "name": "JOMANDA & VALLIS-NERIA -10th anniversary ver.-",
+    "name_read": "ジョマンダ アンド ヴァリスネリア テンス アニバーサリー バージョン スペシャル",
+    "layer1": "emb_9_0050_01_1.png",
+    "layer2": "emb_9_0050_03_2.png",
+    "layer3": "emb_9_0050_01_3.png",
+    "layer4": "emb_9_0050_01_4.png"
+  },
+  "110": {
+    "id": 110,
+    "name": "Singularity",
+    "name_read": "シンギュラリティ スペシャル",
+    "layer1": "emb_1_0465_01_1.png",
+    "layer2": "emb_1_0465_03_2.png",
+    "layer3": "emb_1_0465_01_3.png",
+    "layer4": "emb_1_0465_01_4.png"
+  },
+  "111": {
+    "id": 111,
+    "name": "Pale Garden",
+    "name_read": "ペールガーデン スペシャル",
+    "layer1": "emb_1_0466_01_1.png",
+    "layer2": "emb_1_0466_03_2.png",
+    "layer3": "emb_1_0466_01_3.png",
+    "layer4": "emb_1_0466_01_4.png"
+  },
+  "112": {
+    "id": 112,
+    "name": "Everybody's Rich",
+    "name_read": "エヴリバディズリッチ スペシャル",
+    "layer1": "emb_1_0467_01_1.png",
+    "layer2": "emb_1_0467_03_2.png",
+    "layer3": "emb_1_0467_01_3.png",
+    "layer4": "emb_1_0467_01_4.png"
+  },
+  "113": {
+    "id": 113,
+    "name": "One More Reason",
+    "name_read": "ワンモアリーズン スペシャル",
+    "layer1": "emb_1_0468_01_1.png",
+    "layer2": "emb_1_0468_03_2.png",
+    "layer3": "emb_1_0468_01_3.png",
+    "layer4": "emb_1_0468_01_4.png"
+  },
+  "114": {
+    "id": 114,
+    "name": "Alive in my Soul",
+    "name_read": "アライブインマイソウル スペシャル",
+    "layer1": "emb_1_0469_01_1.png",
+    "layer2": "emb_1_0469_03_2.png",
+    "layer3": "emb_1_0469_01_3.png",
+    "layer4": "emb_1_0469_01_4.png"
+  },
+  "115": {
+    "id": 115,
+    "name": "Rampage☆Rag",
+    "name_read": "ランページラグ スペシャル",
+    "layer1": "emb_1_0470_01_1.png",
+    "layer2": "emb_1_0470_03_2.png",
+    "layer3": "emb_1_0470_01_3.png",
+    "layer4": "emb_1_0470_01_4.png"
+  },
+  "116": {
+    "id": 116,
+    "name": "Fairy Fair",
+    "name_read": "フェアリーフェアー スペシャル",
+    "layer1": "emb_1_0471_01_1.png",
+    "layer2": "emb_1_0471_03_2.png",
+    "layer3": "emb_1_0471_01_3.png",
+    "layer4": "emb_1_0471_01_4.png"
+  },
+  "117": {
+    "id": 117,
+    "name": "Northern Wind",
+    "name_read": "ノーザンウインド スペシャル",
+    "layer1": "emb_1_0472_01_1.png",
+    "layer2": "emb_1_0472_03_2.png",
+    "layer3": "emb_1_0472_01_3.png",
+    "layer4": "emb_1_0472_01_4.png"
+  },
+  "118": {
+    "id": 118,
+    "name": "Maud&Lilieze -10th anniversary ver.-",
+    "name_read": "モードアンドリリーゼ テンス アニバーサリー バージョン スペシャル",
+    "layer1": "emb_9_0051_01_1.png",
+    "layer2": "emb_9_0051_03_2.png",
+    "layer3": "emb_9_0051_01_3.png",
+    "layer4": "emb_9_0051_01_4.png"
+  },
+  "119": {
+    "id": 119,
+    "name": "FUNKY SUMMER BEACH -10th anniversary ver.-",
+    "name_read": "ファンキーサマービーチ テンス アニバーサリー バージョン スペシャル",
+    "layer1": "emb_9_0052_01_1.png",
+    "layer2": "emb_9_0052_03_2.png",
+    "layer3": "emb_9_0052_01_3.png",
+    "layer4": "emb_9_0052_01_4.png"
+  },
+  "120": {
+    "id": 120,
+    "name": "†渚の小悪魔ラヴリィ〜レイディオ† -10th anniversary ver.-",
+    "name_read": "ナギサノコアクマラブリィーレイディオ テンス アニバーサリー バージョン スペシャル",
+    "layer1": "emb_9_0053_01_1.png",
+    "layer2": "emb_9_0053_03_2.png",
+    "layer3": "emb_9_0053_01_3.png",
+    "layer4": "emb_9_0053_01_4.png"
+  },
+  "121": {
+    "id": 121,
+    "name": "夏・KOI・ムッシュ!! -10th anniversary ver.-",
+    "name_read": "ナツコイムッシュ テンス アニバーサリー バージョン スペシャル",
+    "layer1": "emb_9_0054_01_1.png",
+    "layer2": "emb_9_0054_03_2.png",
+    "layer3": "emb_9_0054_01_3.png",
+    "layer4": "emb_9_0054_01_4.png"
+  },
+  "122": {
+    "id": 122,
+    "name": "so Happy -10th anniversary ver.-",
+    "name_read": "ソウ ハッピー テンス アニバーサリー バージョン スペシャル",
+    "layer1": "emb_9_0055_01_1.png",
+    "layer2": "emb_9_0055_03_2.png",
+    "layer3": "emb_9_0055_01_3.png",
+    "layer4": "emb_9_0055_01_4.png"
+  },
+  "123": {
+    "id": 123,
+    "name": "Evans -10th anniversary ver.-",
+    "name_read": "エバンス テンス アニバーサリー バージョン スペシャル",
+    "layer1": "emb_9_0056_01_1.png",
+    "layer2": "emb_9_0056_03_2.png",
+    "layer3": "emb_9_0056_01_3.png",
+    "layer4": "emb_9_0056_01_4.png"
+  },
+  "124": {
+    "id": 124,
+    "name": "7 Bros. with a cat",
+    "name_read": "セブンブロス ウィズ ア キャット スペシャル",
+    "layer1": "emb_9_0057_01_1.png",
+    "layer2": "emb_9_0057_03_2.png",
+    "layer3": "emb_9_0057_01_3.png",
+    "layer4": "emb_9_0057_01_4.png"
+  },
+  "125": {
+    "id": 125,
+    "name": "jubeatで遊ぶ男の子のエンブレム",
+    "name_read": "ユビートデアソブオトコノコノエンブレム スペシャル",
+    "layer1": "emb_9_0058_01_1.png",
+    "layer2": "emb_9_0058_03_2.png",
+    "layer3": "emb_9_0058_01_3.png",
+    "layer4": "emb_9_0058_01_4.png"
+  },
+  "126": {
+    "id": 126,
+    "name": "jubeatで遊ぶスミスのエンブレム",
+    "name_read": "ユビートデアソブスミスノエンブレム スペシャル",
+    "layer1": "emb_9_0058_01_1.png",
+    "layer2": "emb_9_0059_03_2.png",
+    "layer3": "emb_9_0058_01_3.png",
+    "layer4": "emb_9_0058_01_4.png"
+  },
+  "127": {
+    "id": 127,
+    "name": "走れ！ユビ子！",
+    "name_read": "ハシレユビコ スペシャル",
+    "layer1": "emb_9_0060_01_1.png",
+    "layer2": "emb_9_0060_03_2.png",
+    "layer3": "emb_9_0060_01_3.png",
+    "layer4": "emb_9_0060_01_4.png"
+  },
+  "128": {
+    "id": 128,
+    "name": "コンシェルジュアラモード",
+    "name_read": "コンシェルジュアラモード スペシャル",
+    "layer1": "emb_9_0061_01_1.png",
+    "layer2": "emb_9_0061_03_2.png",
+    "layer3": "emb_9_0061_01_3.png",
+    "layer4": "emb_9_0061_01_4.png"
+  },
+  "129": {
+    "id": 129,
+    "name": "トキメキメカニクス",
+    "name_read": "トキメキメカニクス スペシャル",
+    "layer1": "emb_1_0473_01_1.png",
+    "layer2": "emb_1_0473_03_2.png",
+    "layer3": "emb_1_0473_01_3.png",
+    "layer4": "emb_1_0473_01_4.png"
+  },
+  "130": {
+    "id": 130,
+    "name": "Dream drip macchiato",
+    "name_read": "ドリームドリップマキアート スペシャル",
+    "layer1": "emb_1_0474_01_1.png",
+    "layer2": "emb_1_0474_03_2.png",
+    "layer3": "emb_1_0474_01_3.png",
+    "layer4": "emb_1_0474_01_4.png"
+  },
+  "131": {
+    "id": 131,
+    "name": "幸せが鳴る夜に",
+    "name_read": "シアワセガナルヨルニ スペシャル",
+    "layer1": "emb_1_0475_01_1.png",
+    "layer2": "emb_1_0475_03_2.png",
+    "layer3": "emb_1_0475_01_3.png",
+    "layer4": "emb_1_0475_01_4.png"
+  },
+  "132": {
+    "id": 132,
+    "name": "Pegasus",
+    "name_read": "ペガサス スペシャル",
+    "layer1": "emb_1_0476_01_1.png",
+    "layer2": "emb_1_0476_03_2.png",
+    "layer3": "emb_1_0476_01_3.png",
+    "layer4": "emb_1_0476_01_4.png"
+  },
+  "133": {
+    "id": 133,
+    "name": "Welcome to the Mosh Pit",
+    "name_read": "ウェルカムトゥザモッシュピット スペシャル",
+    "layer1": "emb_1_0477_01_1.png",
+    "layer2": "emb_1_0477_03_2.png",
+    "layer3": "emb_1_0477_01_3.png",
+    "layer4": "emb_1_0477_01_4.png"
+  },
+  "134": {
+    "id": 134,
+    "name": "ROCK ju",
+    "name_read": "ロックユー スペシャル",
+    "layer1": "emb_1_0478_01_1.png",
+    "layer2": "emb_1_0478_03_2.png",
+    "layer3": "emb_1_0478_01_3.png",
+    "layer4": "emb_1_0478_01_4.png"
+  },
+  "135": {
+    "id": 135,
+    "name": "雨上がりの空に",
+    "name_read": "アメアガリノソラニ スペシャル",
+    "layer1": "emb_1_0479_01_1.png",
+    "layer2": "emb_1_0479_03_2.png",
+    "layer3": "emb_1_0479_01_3.png",
+    "layer4": "emb_1_0479_01_4.png"
+  },
+  "136": {
+    "id": 136,
+    "name": "Radius",
+    "name_read": "レイディアス スペシャル",
+    "layer1": "emb_1_0480_01_1.png",
+    "layer2": "emb_1_0480_03_2.png",
+    "layer3": "emb_1_0480_01_3.png",
+    "layer4": "emb_1_0480_01_4.png"
+  },
+  "137": {
+    "id": 137,
+    "name": "Glitter Cube",
+    "name_read": "グリッターキューブ スペシャル",
+    "layer1": "emb_1_0481_01_1.png",
+    "layer2": "emb_1_0481_03_2.png",
+    "layer3": "emb_1_0481_01_3.png",
+    "layer4": "emb_1_0481_01_4.png"
+  },
+  "138": {
+    "id": 138,
+    "name": "少女、摩天楼へ",
+    "name_read": "ショウジョマテンロウヘ スペシャル",
+    "layer1": "emb_1_0482_01_1.png",
+    "layer2": "emb_1_0482_03_2.png",
+    "layer3": "emb_1_0482_01_3.png",
+    "layer4": "emb_1_0482_01_4.png"
+  },
+  "139": {
+    "id": 139,
+    "name": "Sahara",
+    "name_read": "サハラ スペシャル",
+    "layer1": "emb_1_0483_01_1.png",
+    "layer2": "emb_1_0483_03_2.png",
+    "layer3": "emb_1_0483_01_3.png",
+    "layer4": "emb_1_0483_01_4.png"
+  },
+  "140": {
+    "id": 140,
+    "name": "Phantasmagoria",
+    "name_read": "ファンタズマゴリア スペシャル",
+    "layer1": "emb_1_0484_01_1.png",
+    "layer2": "emb_1_0484_03_2.png",
+    "layer3": "emb_1_0484_01_3.png",
+    "layer4": "emb_1_0484_01_4.png"
+  },
+  "141": {
+    "id": 141,
+    "name": "EMOTiON TRiPPER",
+    "name_read": "エモーショントリッパー スペシャル",
+    "layer1": "emb_1_0485_01_1.png",
+    "layer2": "emb_1_0485_03_2.png",
+    "layer3": "emb_1_0485_01_3.png",
+    "layer4": "emb_1_0485_01_4.png"
+  },
+  "142": {
+    "id": 142,
+    "name": "月影小町",
+    "name_read": "ツキカゲコマチ スペシャル",
+    "layer1": "emb_1_0486_01_1.png",
+    "layer2": "emb_1_0486_03_2.png",
+    "layer3": "emb_1_0486_01_3.png",
+    "layer4": "emb_1_0486_01_4.png"
+  },
+  "143": {
+    "id": 143,
+    "name": "ポチコの幸せな日常",
+    "name_read": "ポチコノシアワセナニチジョウ スペシャル",
+    "layer1": "emb_1_0487_01_1.png",
+    "layer2": "emb_1_0487_03_2.png",
+    "layer3": "emb_1_0487_01_3.png",
+    "layer4": "emb_1_0487_01_4.png"
+  },
+  "144": {
+    "id": 144,
+    "name": "In Your EyEs",
+    "name_read": "インユアアイズ スペシャル",
+    "layer1": "emb_1_0488_01_1.png",
+    "layer2": "emb_1_0488_03_2.png",
+    "layer3": "emb_1_0488_01_3.png",
+    "layer4": "emb_1_0488_01_4.png"
+  },
+  "145": {
+    "id": 145,
+    "name": "Samba Ramba",
+    "name_read": "サンバランバ スペシャル",
+    "layer1": "emb_1_0489_01_1.png",
+    "layer2": "emb_1_0489_03_2.png",
+    "layer3": "emb_1_0489_01_3.png",
+    "layer4": "emb_1_0489_01_4.png"
+  },
+  "146": {
+    "id": 146,
+    "name": "終末を追う者",
+    "name_read": "シュウマツヲオウモノ スペシャル",
+    "layer1": "emb_1_0225_01_1.png",
+    "layer2": "emb_1_0225_03_2.png",
+    "layer3": "emb_1_0225_01_3.png",
+    "layer4": "emb_1_0225_01_4.png"
+  },
+  "147": {
+    "id": 147,
+    "name": "Towards the TOWER",
+    "name_read": "トワーズザタワー スペシャル",
+    "layer1": "emb_1_0366_01_1.png",
+    "layer2": "emb_1_0366_03_2.png",
+    "layer3": "emb_1_0366_01_3.png",
+    "layer4": "emb_1_0366_01_4.png"
+  },
+  "148": {
+    "id": 148,
+    "name": "Analyse Katharsis",
+    "name_read": "アナリーゼカタルシス スペシャル",
+    "layer1": "emb_1_0490_01_1.png",
+    "layer2": "emb_1_0490_03_2.png",
+    "layer3": "emb_1_0490_01_3.png",
+    "layer4": "emb_1_0490_01_4.png"
+  },
+  "149": {
+    "id": 149,
+    "name": "星の小舟",
+    "name_read": "ホシノコブネ スペシャル",
+    "layer1": "emb_1_0491_01_1.png",
+    "layer2": "emb_1_0491_03_2.png",
+    "layer3": "emb_1_0491_01_3.png",
+    "layer4": "emb_1_0491_01_4.png"
+  },
+  "150": {
+    "id": 150,
+    "name": "ロミとロボの宇宙飛行",
+    "name_read": "ロミトロボノウチュウヒコウ スペシャル",
+    "layer1": "emb_1_0492_01_1.png",
+    "layer2": "emb_1_0492_03_2.png",
+    "layer3": "emb_1_0492_01_3.png",
+    "layer4": "emb_1_0492_01_4.png"
+  },
+  "151": {
+    "id": 151,
+    "name": "pedigree",
+    "name_read": "ペディグリー スペシャル",
+    "layer1": "emb_1_0493_01_1.png",
+    "layer2": "emb_1_0493_03_2.png",
+    "layer3": "emb_1_0493_01_3.png",
+    "layer4": "emb_1_0493_01_4.png"
+  },
+  "152": {
+    "id": 152,
+    "name": "Sweet Smile Pajamas Party",
+    "name_read": "スウィートスマイルパジャマパーティー スペシャル",
+    "layer1": "emb_9_0062_01_1.png",
+    "layer2": "emb_9_0062_03_2.png",
+    "layer3": "emb_9_0062_01_3.png",
+    "layer4": "emb_9_0062_01_4.png"
+  },
+  "153": {
+    "id": 153,
+    "name": "リリーゼと炎龍レーヴァテイン",
+    "name_read": "リリーゼトエンリュウレーヴァテイン スペシャル",
+    "layer1": "emb_1_0494_01_1.png",
+    "layer2": "emb_1_0494_03_2.png",
+    "layer3": "emb_1_0494_01_3.png",
+    "layer4": "emb_1_0494_01_4.png"
+  },
+  "154": {
+    "id": 154,
+    "name": "インドがパッカーン！！煩悩マハラジャドリーム",
+    "name_read": "インドガパッカーンボンノウマハラジャドリーム スペシャル",
+    "layer1": "emb_1_0495_01_1.png",
+    "layer2": "emb_1_0495_03_2.png",
+    "layer3": "emb_1_0495_01_3.png",
+    "layer4": "emb_1_0495_01_4.png"
+  },
+  "155": {
+    "id": 155,
+    "name": "コタロー",
+    "name_read": "コタロー スペシャル",
+    "layer1": "emb_9_0063_01_1.png",
+    "layer2": "emb_9_0063_01_2.png",
+    "layer3": "emb_9_0063_01_3.png",
+    "layer4": "emb_9_0063_01_4.png"
+  },
+  "156": {
+    "id": 156,
+    "name": "Never See You Again",
+    "name_read": "ネバーシーユーアゲイン スペシャル",
+    "layer1": "emb_1_0506_01_1.png",
+    "layer2": "emb_1_0506_03_2.png",
+    "layer3": "emb_1_0506_01_3.png",
+    "layer4": "emb_1_0506_01_4.png"
+  },
+  "157": {
+    "id": 157,
+    "name": "Last Dress",
+    "name_read": "ラストドレス スペシャル",
+    "layer1": "emb_1_0507_01_1.png",
+    "layer2": "emb_1_0507_03_2.png",
+    "layer3": "emb_1_0507_01_3.png",
+    "layer4": "emb_1_0507_01_4.png"
+  },
+  "158": {
+    "id": 158,
+    "name": "ヘンゼルとグレーテル",
+    "name_read": "ヘンゼルトグレーテル スペシャル",
+    "layer1": "emb_1_0508_01_1.png",
+    "layer2": "emb_1_0508_03_2.png",
+    "layer3": "emb_1_0508_01_3.png",
+    "layer4": "emb_1_0508_01_4.png"
+  },
+  "159": {
+    "id": 159,
+    "name": "パピポペピプペパ",
+    "name_read": "パピポペピプペパ スペシャル",
+    "layer1": "emb_1_0509_01_1.png",
+    "layer2": "emb_1_0509_03_2.png",
+    "layer3": "emb_1_0509_01_3.png",
+    "layer4": "emb_1_0509_01_4.png"
+  },
+  "160": {
+    "id": 160,
+    "name": "バンめし♪",
+    "name_read": "バンメシ スペシャル",
+    "layer1": "emb_9_0064_01_1.png",
+    "layer2": "emb_9_0064_03_2.png",
+    "layer3": "emb_9_0064_01_3.png",
+    "layer4": "emb_9_0064_01_4.png"
+  },
+  "161": {
+    "id": 161,
+    "name": "シンクロフィッシュ",
+    "name_read": "シンクロフィッシュ スペシャル",
+    "layer1": "emb_1_0510_01_1.png",
+    "layer2": "emb_1_0510_03_2.png",
+    "layer3": "emb_1_0510_01_3.png",
+    "layer4": "emb_1_0510_01_4.png"
+  },
+  "162": {
+    "id": 162,
+    "name": "箱庭のエチュード",
+    "name_read": "ハコニワノエチュード スペシャル",
+    "layer1": "emb_1_0511_01_1.png",
+    "layer2": "emb_1_0511_03_2.png",
+    "layer3": "emb_1_0511_01_3.png",
+    "layer4": "emb_1_0511_01_4.png"
+  },
+  "163": {
+    "id": 163,
+    "name": "たたえよ！絶対覇権アリーシャ帝国",
+    "name_read": "タタエヨゼッタイハケンアリーシャテイコク スペシャル",
+    "layer1": "emb_1_0512_01_1.png",
+    "layer2": "emb_1_0512_03_2.png",
+    "layer3": "emb_1_0512_01_3.png",
+    "layer4": "emb_1_0512_01_4.png"
+  },
+  "164": {
+    "id": 164,
+    "name": "おにぎりディスコ",
+    "name_read": "オニギリディスコ スペシャル",
+    "layer1": "emb_1_0513_01_1.png",
+    "layer2": "emb_1_0513_03_2.png",
+    "layer3": "emb_1_0513_01_3.png",
+    "layer4": "emb_1_0513_01_4.png"
+  },
+  "165": {
+    "id": 165,
+    "name": "ひまわり＊パンチ -summer vacation-",
+    "name_read": "ヒマワリパンチ サマーバケーション スペシャル",
+    "layer1": "emb_9_0065_01_1.png",
+    "layer2": "emb_9_0065_03_2.png",
+    "layer3": "emb_9_0065_01_3.png",
+    "layer4": "emb_9_0065_01_4.png"
+  },
+  "166": {
+    "id": 166,
+    "name": "Hunny Bunny",
+    "name_read": "ハニーバニー スペシャル",
+    "layer1": "emb_1_0514_01_1.png",
+    "layer2": "emb_1_0514_03_2.png",
+    "layer3": "emb_1_0514_01_3.png",
+    "layer4": "emb_1_0514_01_4.png"
+  },
+  "167": {
+    "id": 167,
+    "name": "BEEF",
+    "name_read": "ビーフ スペシャル",
+    "layer1": "emb_1_0515_01_1.png",
+    "layer2": "emb_1_0515_03_2.png",
+    "layer3": "emb_1_0515_01_3.png",
+    "layer4": "emb_1_0515_01_4.png"
+  },
+  "168": {
+    "id": 168,
+    "name": "[E]",
+    "name_read": "カッコイー スペシャル",
+    "layer1": "emb_1_0516_01_1.png",
+    "layer2": "emb_1_0516_03_2.png",
+    "layer3": "emb_1_0516_01_3.png",
+    "layer4": "emb_1_0516_01_4.png"
+  },
+  "169": {
+    "id": 169,
+    "name": "Hopeful Frontier!!!",
+    "name_read": "ホープフルフロンティア スペシャル",
+    "layer1": "emb_1_0517_01_1.png",
+    "layer2": "emb_1_0517_03_2.png",
+    "layer3": "emb_1_0517_01_3.png",
+    "layer4": "emb_1_0517_01_4.png"
+  },
+  "170": {
+    "id": 170,
+    "name": "WELCOME TO MOTOWN PARK",
+    "name_read": "ウェルカムトゥモータウンパーク スペシャル",
+    "layer1": "emb_1_0518_01_1.png",
+    "layer2": "emb_1_0518_03_2.png",
+    "layer3": "emb_1_0518_01_3.png",
+    "layer4": "emb_1_0518_01_4.png"
+  },
+  "171": {
+    "id": 171,
+    "name": "1116",
+    "name_read": "イチイチイチロク スペシャル",
+    "layer1": "emb_1_0519_01_1.png",
+    "layer2": "emb_1_0519_03_2.png",
+    "layer3": "emb_1_0519_01_3.png",
+    "layer4": "emb_1_0519_01_4.png"
+  },
+  "172": {
+    "id": 172,
+    "name": "恋 No リセットゲーム!!!!!",
+    "name_read": "コイノリセットゲーム スペシャル",
+    "layer1": "emb_1_0520_01_1.png",
+    "layer2": "emb_1_0520_03_2.png",
+    "layer3": "emb_1_0520_01_3.png",
+    "layer4": "emb_1_0520_01_4.png"
+  },
+  "173": {
+    "id": 173,
+    "name": "拙者拙者拙者拙者",
+    "name_read": "セッシャセッシャセッシャセッシャ スペシャル",
+    "layer1": "emb_1_0521_01_1.png",
+    "layer2": "emb_1_0521_03_2.png",
+    "layer3": "emb_1_0521_01_3.png",
+    "layer4": "emb_1_0521_01_4.png"
+  },
+  "174": {
+    "id": 174,
+    "name": "スミスと石版のナゾ",
+    "name_read": "スミストセキバンノナゾ スペシャル",
+    "layer1": "emb_9_0066_01_1.png",
+    "layer2": "emb_9_0066_03_2.png",
+    "layer3": "emb_9_0066_01_3.png",
+    "layer4": "emb_9_0066_01_4.png"
+  },
+  "175": {
+    "id": 175,
+    "name": "スミスと石版のナゾ 驚愕ver.",
+    "name_read": "スミストセキバンノナゾ キョウガクバージョン スペシャル",
+    "layer1": "emb_9_0066_01_1.png",
+    "layer2": "emb_9_0067_03_2.png",
+    "layer3": "emb_9_0066_01_3.png",
+    "layer4": "emb_9_0066_01_4.png"
+  },
+  "176": {
+    "id": 176,
+    "name": "GAIA",
+    "name_read": "ガイア スペシャル",
+    "layer1": "emb_1_0200_01_1.png",
+    "layer2": "emb_1_0200_03_2.png",
+    "layer3": "emb_1_0200_01_3.png",
+    "layer4": "emb_1_0200_01_4.png"
+  },
+  "177": {
+    "id": 177,
+    "name": "Endless Beats ⇔ Endless Parties",
+    "name_read": "エンドレスビーツエンドレスパーティーズ スペシャル",
+    "layer1": "emb_1_0522_01_1.png",
+    "layer2": "emb_1_0522_03_2.png",
+    "layer3": "emb_1_0522_01_3.png",
+    "layer4": "emb_1_0522_01_4.png"
+  },
+  "178": {
+    "id": 178,
+    "name": "Agnus Dei",
+    "name_read": "アグナスデイ スペシャル",
+    "layer1": "emb_1_0523_01_1.png",
+    "layer2": "emb_1_0523_03_2.png",
+    "layer3": "emb_1_0523_01_3.png",
+    "layer4": "emb_1_0523_01_4.png"
+  },
+  "179": {
+    "id": 179,
+    "name": "zeeros",
+    "name_read": "ゼーロス スペシャル",
+    "layer1": "emb_1_0524_01_1.png",
+    "layer2": "emb_1_0524_03_2.png",
+    "layer3": "emb_1_0524_01_3.png",
+    "layer4": "emb_1_0524_01_4.png"
+  },
+  "180": {
+    "id": 180,
+    "name": "いちかのクリスマスパーティー",
+    "name_read": "イチカノクリスマスパーティー スペシャル",
+    "layer1": "emb_9_0068_01_1.png",
+    "layer2": "emb_9_0068_03_2.png",
+    "layer3": "emb_9_0068_01_3.png",
+    "layer4": "emb_9_0068_01_4.png"
+  },
+  "181": {
+    "id": 181,
+    "name": "Surf on the Light",
+    "name_read": "サーフオンザライト スペシャル",
+    "layer1": "emb_1_0525_01_1.png",
+    "layer2": "emb_1_0525_03_2.png",
+    "layer3": "emb_1_0525_01_3.png",
+    "layer4": "emb_1_0525_01_4.png"
+  },
+  "182": {
+    "id": 182,
+    "name": "キヤロラ衛星の軌跡",
+    "name_read": "キヤロラエイセイノキセキ スペシャル",
+    "layer1": "emb_1_0526_01_1.png",
+    "layer2": "emb_1_0526_03_2.png",
+    "layer3": "emb_1_0526_01_3.png",
+    "layer4": "emb_1_0526_01_4.png"
+  },
+  "183": {
+    "id": 183,
+    "name": "Necroxis Girl",
+    "name_read": "ネクローシスガール スペシャル",
+    "layer1": "emb_1_0527_01_1.png",
+    "layer2": "emb_1_0527_03_2.png",
+    "layer3": "emb_1_0527_01_3.png",
+    "layer4": "emb_1_0527_01_4.png"
+  },
+  "184": {
+    "id": 184,
+    "name": "Slluuddggee",
+    "name_read": "スラッジ スペシャル",
+    "layer1": "emb_1_0368_01_1.png",
+    "layer2": "emb_1_0368_03_2.png",
+    "layer3": "emb_1_0368_01_3.png",
+    "layer4": "emb_1_0368_01_4.png"
+  },
+  "185": {
+    "id": 185,
+    "name": "おとどけ！トロッコ大作戦",
+    "name_read": "オトドケトロッコダイサクセン スペシャル",
+    "layer1": "emb_9_0069_01_1.png",
+    "layer2": "emb_9_0069_03_2.png",
+    "layer3": "emb_9_0069_01_3.png",
+    "layer4": "emb_9_0069_01_4.png"
+  },
+  "186": {
+    "id": 186,
+    "name": "Prophet Vibe",
+    "name_read": "プロフェットバイブ スペシャル",
+    "layer1": "emb_1_0052_01_1.png",
+    "layer2": "emb_1_0052_03_2.png",
+    "layer3": "emb_1_0052_01_3.png",
+    "layer4": "emb_1_0052_01_4.png"
+  },
+  "187": {
+    "id": 187,
+    "name": "RAISE YOUR HEADS UP",
+    "name_read": "レイズユアヘッズアップ スペシャル",
+    "layer1": "emb_1_0528_01_1.png",
+    "layer2": "emb_1_0528_03_2.png",
+    "layer3": "emb_1_0528_01_3.png",
+    "layer4": "emb_1_0528_01_4.png"
+  },
+  "188": {
+    "id": 188,
+    "name": "ゆめのかなたで",
+    "name_read": "ユメノカナタデ スペシャル",
+    "layer1": "emb_1_0529_01_1.png",
+    "layer2": "emb_1_0529_03_2.png",
+    "layer3": "emb_1_0529_01_3.png",
+    "layer4": "emb_1_0529_01_4.png"
+  },
+  "189": {
+    "id": 189,
+    "name": "宣伝担当3人娘 -いちか-",
+    "name_read": "センデンタントウサンニンムスメ スペシャル",
+    "layer1": "emb_9_0070_01_1.png",
+    "layer2": "emb_9_0070_03_2.png",
+    "layer3": "emb_9_0070_01_3.png",
+    "layer4": "emb_9_0070_01_4.png"
+  },
+  "190": {
+    "id": 190,
+    "name": "宣伝担当3人娘 -のの-",
+    "name_read": "センデンタントウサンニンムスメノノ スペシャル",
+    "layer1": "emb_9_0070_01_1.png",
+    "layer2": "emb_9_0071_03_2.png",
+    "layer3": "emb_9_0070_01_3.png",
+    "layer4": "emb_9_0070_01_4.png"
+  },
+  "191": {
+    "id": 191,
+    "name": "宣伝担当3人娘 -みや-",
+    "name_read": "センデンタントウサンニンムスメミヤ スペシャル",
+    "layer1": "emb_9_0070_01_1.png",
+    "layer2": "emb_9_0072_03_2.png",
+    "layer3": "emb_9_0070_01_3.png",
+    "layer4": "emb_9_0070_01_4.png"
+  },
+  "192": {
+    "id": 192,
+    "name": "jubeatのお正月 -2021-",
+    "name_read": "ユビートノオショウガツニセンニジュウイチ スペシャル",
+    "layer1": "emb_9_0073_01_1.png",
+    "layer2": "emb_9_0073_03_2.png",
+    "layer3": "emb_9_0073_01_3.png",
+    "layer4": "emb_9_0073_01_4.png"
+  },
+  "193": {
+    "id": 193,
+    "name": "恋はどう？モロ◎波動OK☆方程式！！",
+    "name_read": "コイハドウモロハドウオッケーホウテイシキ スペシャル",
+    "layer1": "emb_1_0217_01_1.png",
+    "layer2": "emb_1_0217_03_2.png",
+    "layer3": "emb_1_0217_01_3.png",
+    "layer4": "emb_1_0217_01_4.png"
+  },
+  "194": {
+    "id": 194,
+    "name": "スノーホワイト",
+    "name_read": "スノーホワイト スペシャル",
+    "layer1": "emb_1_0530_01_1.png",
+    "layer2": "emb_1_0530_03_2.png",
+    "layer3": "emb_1_0530_01_3.png",
+    "layer4": "emb_1_0530_01_4.png"
+  },
+  "195": {
+    "id": 195,
+    "name": "LAST OATH",
+    "name_read": "ラストオース スペシャル",
+    "layer1": "emb_1_0531_01_1.png",
+    "layer2": "emb_1_0531_03_2.png",
+    "layer3": "emb_1_0531_01_3.png",
+    "layer4": "emb_1_0531_01_4.png"
+  },
+  "196": {
+    "id": 196,
+    "name": "枝に結ぶ願い",
+    "name_read": "エダニムスブネガイ スペシャル",
+    "layer1": "emb_1_0306_01_1.png",
+    "layer2": "emb_1_0306_03_2.png",
+    "layer3": "emb_1_0306_01_3.png",
+    "layer4": "emb_1_0306_01_4.png"
+  },
+  "197": {
+    "id": 197,
+    "name": "星宿る空の下で",
+    "name_read": "ホシヤドルソラノシタデ スペシャル",
+    "layer1": "emb_1_0411_01_1.png",
+    "layer2": "emb_1_0411_03_2.png",
+    "layer3": "emb_1_0411_01_3.png",
+    "layer4": "emb_1_0411_01_4.png"
+  },
+  "198": {
+    "id": 198,
+    "name": "ラプンツェル",
+    "name_read": "ラプンツェル スペシャル",
+    "layer1": "emb_1_0532_01_1.png",
+    "layer2": "emb_1_0532_03_2.png",
+    "layer3": "emb_1_0532_01_3.png",
+    "layer4": "emb_1_0532_01_4.png"
+  },
+  "199": {
+    "id": 199,
+    "name": "アストライアの双皿 -jubeatoy ver.-",
+    "name_read": "アストライアノソウベイ ユビートイバージョン スペシャル",
+    "layer1": "emb_1_0103_01_1.png",
+    "layer2": "emb_1_0536_01_2.png",
+    "layer3": "emb_1_0103_01_3.png",
+    "layer4": "emb_1_0103_01_4.png"
+  },
+  "200": {
+    "id": 200,
+    "name": "トキメキメカニクス -jubeatoy ver.-",
+    "name_read": "トキメキメカニクス ユビートイバージョン スペシャル",
+    "layer1": "emb_1_0473_01_1.png",
+    "layer2": "emb_1_0535_01_2.png",
+    "layer3": "emb_1_0473_01_3.png",
+    "layer4": "emb_1_0473_01_4.png"
+  },
+  "201": {
+    "id": 201,
+    "name": "time granular -jubeatoy ver.-",
+    "name_read": "タイムグラニュラー ユビートイバージョン スペシャル",
+    "layer1": "emb_1_0294_01_1.png",
+    "layer2": "emb_1_0534_01_2.png",
+    "layer3": "emb_1_0294_01_3.png",
+    "layer4": "emb_1_0294_01_4.png"
+  },
+  "202": {
+    "id": 202,
+    "name": "つぼみ -jubeatoy ver.-",
+    "name_read": "ツボミ ユビートイバージョン スペシャル",
+    "layer1": "emb_1_0204_01_1.png",
+    "layer2": "emb_1_0533_01_2.png",
+    "layer3": "emb_1_0204_01_3.png",
+    "layer4": "emb_1_0204_01_4.png"
+  },
+  "203": {
+    "id": 203,
+    "name": "le mirage",
+    "name_read": "ルミラージュ スペシャル",
+    "layer1": "emb_1_0211_01_1.png",
+    "layer2": "emb_1_0211_03_2.png",
+    "layer3": "emb_1_0211_01_3.png",
+    "layer4": "emb_1_0211_01_4.png"
+  },
+  "204": {
+    "id": 204,
+    "name": "yellow head joe",
+    "name_read": "イエローヘッドジョー スペシャル",
+    "layer1": "emb_1_0070_01_1.png",
+    "layer2": "emb_1_0070_03_2.png",
+    "layer3": "emb_1_0070_01_3.png",
+    "layer4": "emb_1_0070_01_4.png"
+  },
+  "205": {
+    "id": 205,
+    "name": "twinkle noise",
+    "name_read": "トゥインクルノイズ スペシャル",
+    "layer1": "emb_1_0367_01_1.png",
+    "layer2": "emb_1_0367_03_2.png",
+    "layer3": "emb_1_0367_01_3.png",
+    "layer4": "emb_1_0367_01_4.png"
+  },
+  "206": {
+    "id": 206,
+    "name": "Cosminflation",
+    "name_read": "コズミンフレーション スペシャル",
+    "layer1": "emb_1_0427_01_1.png",
+    "layer2": "emb_1_0427_03_2.png",
+    "layer3": "emb_1_0427_01_3.png",
+    "layer4": "emb_1_0427_01_4.png"
+  },
+  "207": {
+    "id": 207,
+    "name": "スペースカーニバル -jubeatoy ver.-",
+    "name_read": "スペースカーニバル ユビートイバージョン スペシャル",
+    "layer1": "emb_1_0037_01_1.png",
+    "layer2": "emb_1_0537_01_2.png",
+    "layer3": "emb_1_0037_01_3.png",
+    "layer4": "emb_1_0037_01_4.png"
+  },
+  "208": {
+    "id": 208,
+    "name": "フー・フローツ -jubeatoy ver.-",
+    "name_read": "フーフローツ ユビートイバージョン スペシャル",
+    "layer1": "emb_1_0104_01_1.png",
+    "layer2": "emb_1_0538_01_2.png",
+    "layer3": "emb_1_0104_01_3.png",
+    "layer4": "emb_1_0104_01_4.png"
+  },
+  "209": {
+    "id": 209,
+    "name": "マインド・ゲーム -jubeatoy ver.-",
+    "name_read": "マインドゲーム ユビートイバージョン スペシャル",
+    "layer1": "emb_1_0273_01_1.png",
+    "layer2": "emb_1_0539_01_2.png",
+    "layer3": "emb_1_0273_01_3.png",
+    "layer4": "emb_1_0273_01_4.png"
+  },
+  "210": {
+    "id": 210,
+    "name": "Midsummer Madness",
+    "name_read": "ミッドサマーマッドネス スペシャル",
+    "layer1": "emb_1_0540_01_1.png",
+    "layer2": "emb_1_0540_03_2.png",
+    "layer3": "emb_1_0540_01_3.png",
+    "layer4": "emb_1_0540_01_4.png"
+  },
+  "211": {
+    "id": 211,
+    "name": "Passion",
+    "name_read": "パッション スペシャル",
+    "layer1": "emb_1_0541_01_1.png",
+    "layer2": "emb_1_0541_03_2.png",
+    "layer3": "emb_1_0541_01_3.png",
+    "layer4": "emb_1_0541_01_4.png"
+  },
+  "212": {
+    "id": 212,
+    "name": "Diargosの森",
+    "name_read": "ディアルゴスノモリ スペシャル",
+    "layer1": "emb_1_0373_01_1.png",
+    "layer2": "emb_1_0373_03_2.png",
+    "layer3": "emb_1_0373_01_3.png",
+    "layer4": "emb_1_0373_01_4.png"
+  },
+  "213": {
+    "id": 213,
+    "name": "Hades Doll",
+    "name_read": "ハーデスドール スペシャル",
+    "layer1": "emb_1_0542_01_1.png",
+    "layer2": "emb_1_0542_03_2.png",
+    "layer3": "emb_1_0542_01_3.png",
+    "layer4": "emb_1_0542_01_4.png"
+  },
+  "214": {
+    "id": 214,
+    "name": "Macuilxochitl",
+    "name_read": "マクイルショチトル スペシャル",
+    "layer1": "emb_1_0035_01_1.png",
+    "layer2": "emb_1_0035_03_2.png",
+    "layer3": "emb_1_0035_01_3.png",
+    "layer4": "emb_1_0035_01_4.png"
+  },
+  "215": {
+    "id": 215,
+    "name": "さよならトリップ",
+    "name_read": "サヨナラトリップ スペシャル",
+    "layer1": "emb_1_0050_01_1.png",
+    "layer2": "emb_1_0050_03_2.png",
+    "layer3": "emb_1_0050_01_3.png",
+    "layer4": "emb_1_0050_01_4.png"
+  },
+  "216": {
+    "id": 216,
+    "name": "Our Love",
+    "name_read": "アワーラヴ スペシャル",
+    "layer1": "emb_1_0543_01_1.png",
+    "layer2": "emb_1_0543_03_2.png",
+    "layer3": "emb_1_0543_01_3.png",
+    "layer4": "emb_1_0543_01_4.png"
+  },
+  "217": {
+    "id": 217,
+    "name": "No Rule Adventure",
+    "name_read": "ノールールアドベンチャー スペシャル",
+    "layer1": "emb_1_0544_01_1.png",
+    "layer2": "emb_1_0544_03_2.png",
+    "layer3": "emb_1_0544_01_3.png",
+    "layer4": "emb_1_0544_01_4.png"
+  },
+  "218": {
+    "id": 218,
+    "name": "VIKING SHIP",
+    "name_read": "ヴァイキングシップ スペシャル",
+    "layer1": "emb_1_0545_01_1.png",
+    "layer2": "emb_1_0545_03_2.png",
+    "layer3": "emb_1_0545_01_3.png",
+    "layer4": "emb_1_0545_01_4.png"
+  },
+  "219": {
+    "id": 219,
+    "name": "heron",
+    "name_read": "ヘロン スペシャル",
+    "layer1": "emb_1_0176_01_1.png",
+    "layer2": "emb_1_0176_03_2.png",
+    "layer3": "emb_1_0176_01_3.png",
+    "layer4": "emb_1_0176_01_4.png"
+  },
+  "220": {
+    "id": 220,
+    "name": "うらもからだも落花微塵",
+    "name_read": "ウラモカラダモラッカミジン スペシャル",
+    "layer1": "emb_1_0062_01_1.png",
+    "layer2": "emb_1_0062_03_2.png",
+    "layer3": "emb_1_0062_01_3.png",
+    "layer4": "emb_1_0062_01_4.png"
+  },
+  "221": {
+    "id": 221,
+    "name": "封隠文様",
+    "name_read": "フウインモンヨウ スペシャル",
+    "layer1": "emb_1_0546_01_1.png",
+    "layer2": "emb_1_0546_03_2.png",
+    "layer3": "emb_1_0546_01_3.png",
+    "layer4": "emb_1_0546_01_4.png"
+  },
+  "222": {
+    "id": 222,
+    "name": "Romancing Layer",
+    "name_read": "ロマンシングレイヤー スペシャル",
+    "layer1": "emb_1_0248_01_1.png",
+    "layer2": "emb_1_0248_03_2.png",
+    "layer3": "emb_1_0248_01_3.png",
+    "layer4": "emb_1_0248_01_4.png"
+  },
+  "223": {
+    "id": 223,
+    "name": "ピザが食べたくてしょうがない皆さんの気持ちを代弁しました",
+    "name_read": "ピザガタベタクテショウガナイミナサンノキモチヲダイベンシマシタ スペシャル",
+    "layer1": "emb_1_0547_01_1.png",
+    "layer2": "emb_1_0547_03_2.png",
+    "layer3": "emb_1_0547_01_3.png",
+    "layer4": "emb_1_0547_01_4.png"
+  },
+  "224": {
+    "id": 224,
+    "name": "TSAR BOMBA",
+    "name_read": "ツァーリボンバ スペシャル",
+    "layer1": "emb_1_0241_01_1.png",
+    "layer2": "emb_1_0241_03_2.png",
+    "layer3": "emb_1_0241_01_3.png",
+    "layer4": "emb_1_0241_01_4.png"
+  },
+  "225": {
+    "id": 225,
+    "name": "Assorted sweets!",
+    "name_read": "アソーテッドスイーツ スペシャル",
+    "layer1": "emb_9_0074_01_1.png",
+    "layer2": "emb_9_0074_03_2.png",
+    "layer3": "emb_9_0074_01_3.png",
+    "layer4": "emb_9_0074_01_4.png"
+  }
+}
