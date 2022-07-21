@@ -23,6 +23,6 @@
     "dotenv": "^8.2.0",
     "lodash": "^4.17.21",
     "node-tweet-stream": "^2.0.3",
-    "pet-pet-gif": "^1.0.8"
+    "pet-pet-gif": "^1.0.9"
   }
 }

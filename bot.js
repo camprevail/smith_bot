@@ -1,7 +1,7 @@
 //The environment string loads the corresponding .env file from the config folder.
 //It controls the output channel and log file.
 //Current options are 'production' or 'test'
-environment = 'production'
+environment = 'test'
 
 process.env.GOOGLE_APPLICATION_CREDENTIALS = './config/translate-api-key.json'
 require('./consoleTimestamp')()
@@ -25,7 +25,7 @@ const isTweet = _.conforms({
 })
 
 const config = require("./config/botconfig.json")
-const emblem_name = require("./assets/emblem-names.json")
+const emblem_info = require("./assets/map.json")
 image_folder = resolve(__dirname,'./assets/memories/output/') + path.sep
 emblem_folder = resolve(__dirname,'./assets/emblem-compiled/') + path.sep
 const Discord = require("discord.js")
@@ -103,7 +103,7 @@ async function translate(text){
     };
     translateResult = await GT.translate(text, options).catch(error => console.log(error))
     translatedtext = translateResult[0]
-    console.log(`translated tweet: ${translatedtext}`)
+    console.log(`translated text: ${translatedtext}`)
     return translatedtext
 }
 
@@ -140,19 +140,23 @@ client.on("message", async message => {
     }
 
     if(command === "emblem"){
-        if(args.length > 0 && args[0] in emblem_name) {
-            await message.reply(`Title: ${emblem_name[args[0]]}`, {
+        if(args.length > 0 && args[0] in emblem_info) {
+            original_text = emblem_info[args[0]].name
+            translatedtext = await translate(original_text)
+            await message.reply(`Title: ${original_text}\n(${translatedtext})`, {
                         files: [emblem_folder+args[0]+".png"]
                         }).catch(error => console.log(`Couldn't post emblem because of: ${error}`))
         } else if(args.length == 0){
             emblemlog = fs.readFileSync(env.emblem_today).toString('utf-8')
             emblem_array = emblemlog.replace(/\r\n|\n/g, ',').split(",").filter(Boolean)
             emblem = emblem_array.shift()
-            await message.reply(`Here's today's SP emblem.\nTitle: ${emblem_name[emblem]}`, {
+            original_text = emblem_info[emblem].name
+            translatedtext = await translate(original_text)
+            await message.reply(`Here's today's SP emblem.\nTitle: ${original_text}\n(${translatedtext})`, {
                         files: [emblem_folder+emblem+".png"]
                         }).catch(error => console.log(`Couldn't post emblem because of: ${error}`))
         } else {
-            await message.reply(`Please choose an id from 1 to ${Object.keys(emblem_name).length}.`)
+            await message.reply(`Please choose an id from 1 to ${Object.keys(emblem_info).length}.`)
         }
     }
 
