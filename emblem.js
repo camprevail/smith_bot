@@ -15,7 +15,7 @@ image_folder = resolve(__dirname,'./assets/emblem-compiled/') + path.sep
 const Discord = require("discord.js")
 const client = new Discord.Client({disableEveryone: true})
 var image = 0
-process.env.GOOGLE_APPLICATION_CREDENTIALS = './config/translate-api-key.json'
+process.env.GOOGLE_APPLICATION_CREDENTIALS = env.transate_creds_path
 const {Translate} = require('@google-cloud/translate').v2
 const GT = new Translate();
 
