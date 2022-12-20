@@ -207,16 +207,28 @@ client.on("message", async message => {
 
         if(!args[0]){return message.reply('\nUse the .petpet command + any custom emoji, with a space in between.\nRegular/animated emoji are not supported, sowwy.')}
         cmdparse = args[0].split(/[:<>]/).filter(Boolean)
+
         if(cmdparse[0] === 'a'){
             return message.reply("Sorry, you can't use animated emojis.")
+        } else if (Number.isInteger(parseInt(cmdparse[0]))){
+            emoji_id = cmdparse[0]
+            emoji_ext = '.gif'
+            url = `https://cdn.discordapp.com/emojis/${emoji_id}.png`
+            console.log(`posting petpet from emoji ${emoji_id}`)
         } else if (Number.isInteger(parseInt(cmdparse[1]))){
             emoji_id = cmdparse[1]
             emoji_ext = '.gif'
             url = `https://cdn.discordapp.com/emojis/${emoji_id}.png`
+            console.log(`posting petpet from emoji ${emoji_id}`)
+        } else if (cmdparse.length == 1 && cmdparse[0].startsWith('@')){ //user mention
+            user = getUserFromMention(args[0])
+            emoji_ext = '.gif'
+            url = `https://cdn.discordapp.com/avatars/${user.id}/${user.avatar}.png`
+            console.log(`posting petpet from user ${user}`)
         } else {
             return message.reply("Sorry, you can't use regular emojis.")
         }
-        console.log(`posting petpet from emoji ${emoji_id}`)
+
         petpet = await petPetGif(url)
         channelid = message.channel.id
         message.channel.messages.fetch(message.id).then(async msg => {
@@ -285,22 +297,22 @@ client.on('guildMemberUpdate', async (oldMember, newMember) => {
 
 });
 
-//function getUserFromMention(mention) {
-//	if (!mention) return;
-//
-//	if (mention.startsWith('<@') && mention.endsWith('>')) {
-//		mention = mention.slice(2, -1);
-//
-//		if (mention.startsWith('!')) {
-//			mention = mention.slice(1);
-//		}
-//		try {
-//		    username = client.users.cache.get(mention).username
-//		} catch(err) {
-//		    console.log(`error at line 177: ${err} from mention: ${mention}`)
-//		}
-//		return username
-//	}
-//}
+function getUserFromMention(mention) {
+	if (!mention) return;
+
+	if (mention.startsWith('<@') && mention.endsWith('>')) {
+		mention = mention.slice(2, -1);
+
+		if (mention.startsWith('!')) {
+			mention = mention.slice(1);
+		}
+		try {
+		    user = client.users.cache.get(mention)
+		} catch(err) {
+		    console.log(`error at line 177: ${err} from mention: ${mention}`)
+		}
+		return user
+	}
+}
 
 client.login(config.token);
