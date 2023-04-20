@@ -9,7 +9,7 @@ path = require('path')
 env = require('dotenv').config({path: resolve(__dirname,`./config/${environment}.env`)}).parsed
 
 const config = require("./config/botconfig.json")
-image_folder = resolve(__dirname,'./assets/lightchat')
+image_folder = resolve(__dirname,'./assets/memories/output/') + path.sep
 const Discord = require("discord.js")
 const client = new Discord.Client({disableEveryone: true})
 var image = 0
@@ -45,21 +45,24 @@ async function loggedImages() {
 
 function getValue(){
 	fs = require('fs')
-	imagelog = fs.readFileSync(env.lightchat_log).toString('utf-8')
-	defaults_log = fs.readFileSync(env.lightchat_defaults).toString('utf-8')
+	imagelog = fs.readFileSync(env.memories_log).toString('utf-8')
+	defaults_log = fs.readFileSync(env.memories_defaults).toString('utf-8')
     image_array = imagelog.replace(/\r\n|\n/g, ',').split(",").filter(Boolean)
     defaults_array = defaults_log.replace(/\r\n|\n/g, ',').split(",").filter(Boolean)
     image = image_array.shift()
     if (image) {
-            fs.writeFile(env.lightchat_log, image_array.map(item => item + '\r\n').join().replace(/,/g, ''), (err) => {
+            fs.writeFile(env.memories_log, image_array.map(item => item + '\r\n').join().replace(/,/g, ''), (err) => {
                 if(err) throw err
             })
+            fs.writeFile(env.memory_today, image, (err) => {
+                            if(err) throw err
+                        })
     } else {
         image = defaults_array.shift()
-        fs.writeFile(env.lightchat_log, defaults_array.map(item => item + '\r\n').join().replace(/,/g, ''), (err) => {
+        fs.writeFile(env.memories_log, defaults_array.map(item => item + '\r\n').join().replace(/,/g, ''), (err) => {
                         if(err) throw err
                     })
-        const warn_reset = "Smith lightchat log was reset."
+        const warn_reset = "Smith memories log was reset."
         if (environment === 'production') {
             client.channels.cache.get(channel_cammy_server).send(warn_reset)
         }
@@ -73,8 +76,8 @@ function getValue(){
 async function post_image(image) {
 	if (image) { // if image is not 'undefined', which happens if you run out of images
         console.log(`Posting: ${image}`)
-        await client.channels.cache.get(env.output_channel).send("Good day, foodbeat players. Today we start a new series featuring LIGHT CHAT characters from Jubeat Avenue.\nHere is today's LIGHT CHAT character.", {
-            files: [`${image_folder}/${image}.gif`]
+        await client.channels.cache.get(env.output_channel).send("Good day, foodbeat players. Here is today's memory.", {
+            files: [image_folder+image]
             }).catch(error => console.log(`Couldn't post because of: ${error}`))
     } else {
         console.log(`Not attempting to post image: ${image}`)

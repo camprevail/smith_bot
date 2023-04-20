@@ -11,18 +11,18 @@ env = require('dotenv').config({path: resolve(__dirname,`./config/${environment}
 const fs = require('fs')
 const bent = require('bent')
 const getBuffer = bent('buffer')
-const Twitter = require('node-tweet-stream')
-_ = require('lodash')
+//const Twitter = require('node-tweet-stream')
+//_ = require('lodash')
 const petPetGif = require('pet-pet-gif')
 const {Translate} = require('@google-cloud/translate').v2
 const GT = new Translate();
 
 
-const isTweet = _.conforms({
-  id_str: _.isString,
-  text: _.isString,
-  in_reply_to_status_id: _.isNull
-})
+//const isTweet = _.conforms({
+//  id_str: _.isString,
+//  text: _.isString,
+//  in_reply_to_status_id: _.isNull
+//})
 
 const config = require("./config/botconfig.json")
 const emblem_info = require("./assets/map.json")
@@ -33,6 +33,8 @@ const client = new Discord.Client({ ws: { intents: new Discord.Intents(Discord.I
 const admins = config.admins
 var image = 0
 
+//RIP twitter api
+/*
 var stream = new Twitter({
     consumer_key: config.consumer_key,
     consumer_secret: config.consumer_secret,
@@ -115,6 +117,7 @@ async function post(userid, postid, text = '') {
         await client.channels.cache.get(env.output_channel).send(`https://twitter.com/${userid}/statuses/${postid}`).catch(error => console.log(`error in function "post": ${error}`))
     }
 }
+*/
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
