@@ -293,10 +293,16 @@ client.on("message", async message => {
 
 client.on('guildMemberUpdate', async (oldMember, newMember) => {
 	// If the role(s) are present on the old member object but no longer on the new one (i.e role(s) were removed)
-	const addedRoles = newMember.roles.cache.filter(role => !oldMember.roles.cache.has(role.id));
-	if (addedRoles.map(r => r.name) == 'Confirmed') {
-	    await client.channels.cache.get(env.output_channel).send(`Welcome <@${oldMember.id}> <:smithowo:700402109140434945> Post food.\nAlso, please review the server rules here: https://discord.com/channels/291800868171284480/296071002842988554/547872219770912815`)
-	}
+	console.log('guildMemberUpdate event received.')
+	try {
+        const addedRoles = newMember.roles.cache.filter(role => !oldMember.roles.cache.has(role.id));
+        console.log(`addedRoles: ${addedRoles.map(r => r.name)} -- len = ${addedRoles.size}`)
+        if (addedRoles.map(r => r.name).includes('Confirmed')) {
+            await client.channels.cache.get(env.output_channel).send(`Welcome <@${oldMember.id}> <:smithowo:700402109140434945> Post food.\nAlso, please review the server rules here: https://discord.com/channels/291800868171284480/296071002842988554/547872219770912815`)
+        }
+    } catch(err) {
+        console.log(`Error in guildMemberUpdate function: ${err}`)
+    }
 
 });
 
